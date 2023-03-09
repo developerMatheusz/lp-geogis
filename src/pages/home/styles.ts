@@ -42,8 +42,8 @@ export const SectionNews = styled.div`
       clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 100%);
     `}
     ${media.lessThan("medium")`
-      padding-top: calc(${theme.spacings.xxlarge} * 6);
-      clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 100%);
+      padding-top: calc(${theme.spacings.xxlarge} * 2);
+      clip-path: polygon(0 18%, 100% 8%, 100% 100%, 0 100%);
     `}
   `}
 `;
