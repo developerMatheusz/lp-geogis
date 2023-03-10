@@ -24,7 +24,8 @@ export const Content = styled.div`
 export const Column = styled.div`
   ${({ theme }) => css`
     a,
-    span {
+    span,
+    p {
       display: block;
       color: ${theme.colors.gray};
       text-decoration: none;

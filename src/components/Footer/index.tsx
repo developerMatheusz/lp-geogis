@@ -12,7 +12,8 @@ const Footer = () => {
           <Heading color="white" size="small" lineBottom lineColor="secondary">
             Contato
           </Heading>
-          <a href="mailto:geo@gis.com.br">geo@gis.com.br</a>
+          <a href="mailto:contato@geogis.com.br">contato@geogis.com.br</a>
+          <a href="https://wa.me/556540631726">+55 (65) 4063 - 1726</a>
         </S.Column>
         <S.Column>
           <Heading color="white" size="small" lineBottom lineColor="secondary">
@@ -20,32 +21,18 @@ const Footer = () => {
           </Heading>
           <nav aria-labelledby="social media">
             <a
-              href="https://www.instagram.com/won-games"
+              href="https://www.instagram.com/geogisgeotec/"
               target="_blank"
               rel="noopenner, noreferrer"
             >
               Instagram
             </a>
             <a
-              href="https://www.twitter.com/won-games"
+              href="http://localhost:3000"
               target="_blank"
               rel="noopenner, noreferrer"
             >
-              Twitter
-            </a>
-            <a
-              href="https://www.youtube.com/won-games"
-              target="_blank"
-              rel="noopenner, noreferrer"
-            >
-              Youtube
-            </a>
-            <a
-              href="https://www.facebook.com/won-games"
-              target="_blank"
-              rel="noopenner, noreferrer"
-            >
-              Facebook
+              Site GeoGIS
             </a>
           </nav>
         </S.Column>
@@ -65,9 +52,8 @@ const Footer = () => {
           <Heading color="white" lineColor="secondary" lineBottom size="small">
             Localização
           </Heading>
-          <span>Lorem ipsum dolor sit.</span>
-          <span>Lorem Ipsum</span>
-          <span>Lorem, ipsum dolor.</span>
+          <span>Avenida Senador Filinto Muller, 440</span>
+          <span>Goiabeiras - Cuiabá/MT</span>
         </S.Column>
         <S.Copyright>
           GeoGIS 2023 &copy; Todos os direitos reservados.

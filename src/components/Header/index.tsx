@@ -1,6 +1,6 @@
 import * as S from "./styles";
-import MediaMatch from "../../../components/MediaMatch/index";
-import Logo from "../../../components/Logo";
+import MediaMatch from "../MediaMatch/index";
+import Logo from "../Logo";
 
 const Header = () => {
   return (

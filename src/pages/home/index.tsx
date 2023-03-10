@@ -2,13 +2,14 @@ import { BannerProps } from "@/components/Banner";
 import Footer from "../../components/Footer";
 import { Container } from "../../components/Container";
 import { ContainerForm } from "../../components/ContainerForm";
-import Header from "./header";
-import SliderNews from "./slider";
+import Header from "../../components/Header";
+import SliderNews from "../../components/SliderNews";
 import * as S from "./styles";
 import AboutUs from "../../components/AboutUs";
 import { GeoCardProps } from "../../components/GeoCard";
 import Showcase from "../../components/ShowCase";
 import FormFeedback from "../../components/FormFeedback";
+import AdditionalInformation from "@/components/AdditionalInformation";
 
 export type HomeTemplateProps = {
   banners: BannerProps[];
@@ -33,6 +34,7 @@ const Home = ({ banners, news }: HomeTemplateProps) => {
           <FormFeedback />
         </ContainerForm>
       </S.SectionForm>
+      <AdditionalInformation />
       <S.SectionFooter>
         <Container>
           <Footer />

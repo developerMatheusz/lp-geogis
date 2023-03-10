@@ -4,14 +4,7 @@ import media from "styled-media-query";
 export const Wrapper = styled.div`
   ${({ theme }) => css`
     > Header {
-      opacity: 0.65;
-      border-bottom: 0.15rem solid ${theme.colors.white};
-      box-shadow: 0.1rem 0.1rem 0.1rem ${theme.colors.lightGray};
-      &:hover {
-        opacity: 1;
-        box-shadow: none;
-        transition: 0.5s;
-      }
+      border-bottom: 0.2rem solid ${theme.colors.white};
     }
     background-image: url(/img/testimonial-bg.jpg);
   `}
@@ -30,16 +23,15 @@ export const SectionBanner = styled.section`
 
 export const SectionNews = styled.div`
   ${({ theme }) => css`
-    border-bottom: 0.4rem solid ${theme.colors.white};
-    opacity: 0.7;
-    margin-top: ${theme.spacings.xxlarge};
+    border-bottom: 0.2rem solid ${theme.colors.white};
+    margin-top: ${theme.spacings.large};
     padding-bottom: ${theme.spacings.xsmall};
     padding-top: ${theme.spacings.xxlarge};
-    background-color: #294380;
+    background-color: rgba(56, 109, 189, 0.38);
     clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 100%);
     ${media.greaterThan("medium")`
-      padding-top: calc(${theme.spacings.xxlarge} * 3);
-      clip-path: polygon(0 26%, 100% 14%, 100% 100%, 0 100%);
+      padding-top: calc(${theme.spacings.xxlarge} * 2);
+      clip-path: polygon(0 16%, 100% 5%, 100% 100%, 0 100%);
     `}
     ${media.lessThan("medium")`
       padding-top: calc(${theme.spacings.xxlarge} * 2);
@@ -50,19 +42,15 @@ export const SectionNews = styled.div`
 
 export const SectionForm = styled.div`
   ${({ theme }) => css`
-    border-bottom: 0.4rem solid ${theme.colors.white};
-    opacity: 0.7;
-    &:hover {
-      opacity: 0.8;
-    }
-    margin-top: ${theme.spacings.medium};
+    border-bottom: 0.2rem solid ${theme.colors.white};
+    margin-top: ${theme.spacings.large};
     padding-bottom: ${theme.spacings.xsmall};
-    padding-top: ${theme.spacings.xxlarge};
-    background-color: #294380;
+    padding-top: ${theme.spacings.medium};
+    background-color: rgba(56, 109, 189, 0.38);
     clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 100%);
     ${media.greaterThan("medium")`
-      padding-top: calc(${theme.spacings.xxlarge} * 2);
-      clip-path: polygon(0 32%, 100% 20%, 100% 100%, 0 100%);
+      padding-top: calc(${theme.spacings.xxlarge} * 1);
+      clip-path: polygon(0 5%, 100% 18%, 100% 100%, 0 100%);
     `}
     ${media.lessThan("medium")`
       padding-top: calc(${theme.spacings.xxlarge} * 2);

@@ -47,10 +47,14 @@ export const Wrapper = styled.button<WrapperProps>`
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(180deg, #101f78 0%, #1c31a5 50%);
+    background: linear-gradient(180deg, #101f78, #1c31a5);
+    cursor: pointer;
+    color: ${theme.colors.white};
+    background: linear-gradient(180deg, #1c31a5 0%, #101f78 50%);
     cursor: pointer;
     color: ${theme.colors.white};
     border: 0;
+    box-shadow: 0.1rem 0.2rem 0.1rem #1c31a5;
     border-radius: ${theme.border.radius};
     padding: ${theme.spacings.xxsmall};
     text-decoration: none;

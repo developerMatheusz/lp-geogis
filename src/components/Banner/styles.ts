@@ -56,7 +56,7 @@ export const Subtitle = styled.h3`
     font-weight: ${theme.font.normal};
     margin-bottom: ${theme.spacings.xsmall};
     strong {
-      color: green;
+      color: ${theme.colors.green};
       font-weight: ${theme.font.bold};
     }
     ${media.greaterThan("medium")`
