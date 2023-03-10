@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
     `}
     ${media.lessThan("medium")`
       padding-top: calc(${theme.spacings.xxlarge} * 5);
-      clip-path: polygon(0 15%, 100% 10%, 100% 100%, 0 
+      clip-path: polygon(0 13%, 100% 10%, 100% 100%, 0 
         100%);
     `}
     border-bottom: 0.4rem solid ${theme.colors.white};

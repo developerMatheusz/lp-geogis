@@ -43,7 +43,7 @@ export const SectionNews = styled.div`
     `}
     ${media.lessThan("medium")`
       padding-top: calc(${theme.spacings.xxlarge} * 2);
-      clip-path: polygon(0 18%, 100% 8%, 100% 100%, 0 100%);
+      clip-path: polygon(0 20%, 100% 8%, 100% 100%, 0 100%);
     `}
   `}
 `;
