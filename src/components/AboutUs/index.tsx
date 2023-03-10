@@ -24,7 +24,9 @@ const AboutUs = ({
           <S.Description>{description}</S.Description>
         </S.Column>
         <S.Column>
-          <BuildingHouse />
+          <S.ContainerIcon>
+            <BuildingHouse />
+          </S.ContainerIcon>
           <Heading color="white">Regularização de Imóveis Urbanos</Heading>
           <S.Description>
             Conforme a Constituição Federal, um dos nossos direitos fundamentais
@@ -38,7 +40,9 @@ const AboutUs = ({
           </S.Description>
         </S.Column>
         <S.Column>
-          <House />
+          <S.ContainerIcon>
+            <House />
+          </S.ContainerIcon>
           <Heading color="white">Regularização de Imóveis Rurais</Heading>
           <S.Description>
             A posse e propriedade são propósito que merece atenção especial da
@@ -56,7 +60,9 @@ const AboutUs = ({
           </S.Description>
         </S.Column>
         <S.Column>
-          <Photo />
+          <S.ContainerIcon>
+            <Photo />
+          </S.ContainerIcon>
           <Heading color="white">Imageamento de Rodovias</Heading>
           <S.Description>
             São imagens panorâmicas georreferenciadas com capacidade de
@@ -68,7 +74,9 @@ const AboutUs = ({
           </S.Description>
         </S.Column>
         <S.Column>
-          <PhotoLibrary />
+          <S.ContainerIcon>
+            <PhotoLibrary />
+          </S.ContainerIcon>
           <Heading color="white">Aerofotogrametria</Heading>
           <S.Description>
             É de extrema importância para a geotecnologia, classificado como um

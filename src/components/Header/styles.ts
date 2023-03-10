@@ -9,6 +9,9 @@ export const Wrapper = styled.header`
     padding: ${theme.spacings.small} 0;
     position: relative;
     background-color: rgba(1, 9, 55, 0.6);
+    &:hover {
+      background-color: rgba(1, 9, 55, 0.4);
+    }
   `}
 `;
 

@@ -9,6 +9,9 @@ export const Wrapper = styled.div`
     padding-bottom: ${theme.spacings.xsmall};
     padding-top: ${theme.spacings.xxlarge};
     background-color: rgba(56, 109, 189, 0.38);
+    &:hover {
+      background-color: rgba(56, 109, 189, 0.58);
+    }
     clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 100%);
     ${media.greaterThan("medium")`
       padding-top: calc(${theme.spacings.xxlarge} * 2.5);
@@ -16,13 +19,12 @@ export const Wrapper = styled.div`
     `}
     ${media.between("medium", "large")`
       padding-top: calc(${theme.spacings.xxlarge} * 5);
-      clip-path: polygon(0 14%, 100% 10%, 100% 100%, 0 
-        100%);
+      clip-path: polygon(0 10%, 100% 12%, 100% 100%, 0 
+      100%);
     `}
     ${media.lessThan("medium")`
       padding-top: calc(${theme.spacings.xxlarge} * 5);
-      clip-path: polygon(0 11%, 100% 9%, 100% 100%, 0 
-        100%);
+      clip-path: polygon(0 10%, 100% 11%, 100% 100%, 0 100%);
     `}
     border-bottom: 0.2rem solid ${theme.colors.white};
   `}
@@ -56,9 +58,21 @@ export const Column = styled.div`
     a:hover {
       text-decoration: underline;
     }
+  `}
+`;
+
+export const ContainerIcon = styled.div`
+  ${({ theme }) => css`
+    max-width: 6.5rem;
+    border: 0.3rem solid ${theme.colors.secondary};
     > svg {
       width: 6rem;
       color: ${theme.colors.white};
+    }
+    transition: 0.4s;
+    &:hover {
+      transform: rotate(45deg);
+      transition: 0.4s;
     }
   `}
 `;

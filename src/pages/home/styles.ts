@@ -28,6 +28,9 @@ export const SectionNews = styled.div`
     padding-bottom: ${theme.spacings.xsmall};
     padding-top: ${theme.spacings.xxlarge};
     background-color: rgba(56, 109, 189, 0.38);
+    &:hover {
+      background-color: rgba(56, 109, 189, 0.58);
+    }
     clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 100%);
     ${media.greaterThan("medium")`
       padding-top: calc(${theme.spacings.xxlarge} * 2);
@@ -35,7 +38,7 @@ export const SectionNews = styled.div`
     `}
     ${media.lessThan("medium")`
       padding-top: calc(${theme.spacings.xxlarge} * 2);
-      clip-path: polygon(0 20%, 100% 16%, 100% 100%, 0 100%);
+      clip-path: polygon(0 16%, 100% 5%, 100% 100%, 0 100%);
     `}
   `}
 `;
@@ -47,14 +50,22 @@ export const SectionForm = styled.div`
     padding-bottom: ${theme.spacings.xsmall};
     padding-top: ${theme.spacings.medium};
     background-color: rgba(56, 109, 189, 0.38);
+    &:hover {
+      background-color: rgba(56, 109, 189, 0.58);
+    }
     clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 100%);
     ${media.greaterThan("medium")`
       padding-top: calc(${theme.spacings.xxlarge} * 1);
       clip-path: polygon(0 5%, 100% 18%, 100% 100%, 0 100%);
     `}
+    ${media.between("medium", "large")`
+      padding-top: calc(${theme.spacings.xxlarge} * 1);
+      clip-path: polygon(0 10%, 100% 22%, 100% 100%, 0 
+      100%);
+    `}
     ${media.lessThan("medium")`
-      padding-top: calc(${theme.spacings.xxlarge} * 2);
-      clip-path: polygon(0 20%, 100% 16%, 100% 100%, 0 100%);
+      padding-top: calc(${theme.spacings.xxlarge} * 1);
+      clip-path: polygon(0 10%, 100% 22%, 100% 100%, 0 100%);
     `}
   `}
 `;

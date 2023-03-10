@@ -52,7 +52,7 @@ const Footer = () => {
           <Heading color="white" lineColor="secondary" lineBottom size="small">
             Localização
           </Heading>
-          <span>Avenida Senador Filinto Muller, 440</span>
+          <span>Avenida Senador Filinto Muller, 440 - CEP 78045-410</span>
           <span>Goiabeiras - Cuiabá/MT</span>
         </S.Column>
         <S.Copyright>

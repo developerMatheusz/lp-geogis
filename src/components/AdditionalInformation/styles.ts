@@ -9,22 +9,19 @@ export const Wrapper = styled.div`
     padding-bottom: ${theme.spacings.xsmall};
     padding-top: ${theme.spacings.xxlarge};
     background-color: rgba(56, 109, 189, 0.38);
+    &:hover {
+      background-color: rgba(56, 109, 189, 0.58);
+    }
     clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 100%);
     ${media.greaterThan("medium")`
       padding-top: calc(${theme.spacings.xxlarge} * 1);
-      clip-path: polygon(0 20%, 100% 6%, 100% 100%, 0 100%);
-    `}
-    ${media.between("medium", "large")`
-      padding-top: calc(${theme.spacings.xxlarge} * 5);
-      clip-path: polygon(0 14%, 100% 10%, 100% 100%, 0 
-        100%);
+      clip-path: polygon(0 20%, 100% 5%, 100% 100%, 0 100%);
     `}
     ${media.lessThan("medium")`
       padding-top: calc(${theme.spacings.xxlarge} * 1);
-      clip-path: polygon(0 20%, 100% 9%, 100% 100%, 0 
-        100%);
+      clip-path: polygon(0 20%, 100% 5%, 100% 100%, 0 100%);
     `}
-    border-bottom: 0.4rem solid ${theme.colors.white};
+    border-bottom: 0.2rem solid ${theme.colors.white};
   `}
 `;
 
@@ -64,6 +61,14 @@ export const Column = styled.div`
       width: 6rem;
       color: ${theme.colors.white};
     }
+    ${media.lessThan("medium")`
+      > svg {
+        width: 4rem;
+      }
+      a, span, h2, p {
+        font-size: ${theme.font.sizes.small};
+      }
+    `}
   `}
 `;
 

@@ -54,7 +54,6 @@ export const Wrapper = styled.button<WrapperProps>`
     cursor: pointer;
     color: ${theme.colors.white};
     border: 0;
-    box-shadow: 0.1rem 0.2rem 0.1rem #1c31a5;
     border-radius: ${theme.border.radius};
     padding: ${theme.spacings.xxsmall};
     text-decoration: none;
