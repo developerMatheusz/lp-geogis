@@ -39,11 +39,34 @@ export const SectionNews = styled.div`
     clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 100%);
     ${media.greaterThan("medium")`
       padding-top: calc(${theme.spacings.xxlarge} * 3);
-      clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 100%);
+      clip-path: polygon(0 26%, 100% 14%, 100% 100%, 0 100%);
     `}
     ${media.lessThan("medium")`
       padding-top: calc(${theme.spacings.xxlarge} * 2);
-      clip-path: polygon(0 20%, 100% 8%, 100% 100%, 0 100%);
+      clip-path: polygon(0 20%, 100% 16%, 100% 100%, 0 100%);
+    `}
+  `}
+`;
+
+export const SectionForm = styled.div`
+  ${({ theme }) => css`
+    border-bottom: 0.4rem solid ${theme.colors.white};
+    opacity: 0.7;
+    &:hover {
+      opacity: 0.8;
+    }
+    margin-top: ${theme.spacings.medium};
+    padding-bottom: ${theme.spacings.xsmall};
+    padding-top: ${theme.spacings.xxlarge};
+    background-color: #294380;
+    clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 100%);
+    ${media.greaterThan("medium")`
+      padding-top: calc(${theme.spacings.xxlarge} * 2);
+      clip-path: polygon(0 32%, 100% 20%, 100% 100%, 0 100%);
+    `}
+    ${media.lessThan("medium")`
+      padding-top: calc(${theme.spacings.xxlarge} * 2);
+      clip-path: polygon(0 20%, 100% 16%, 100% 100%, 0 100%);
     `}
   `}
 `;

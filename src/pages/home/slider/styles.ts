@@ -50,5 +50,7 @@ export const Wrapper = styled.section`
       visibility: hidden;
     }
     cursor: pointer;
+    border-bottom: 0.1rem solid ${theme.colors.white};
+    box-shadow: 0.1rem ${theme.colors.lightGray};
   `}
 `;

@@ -13,11 +13,16 @@ export const Wrapper = styled.div`
     clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 100%);
     ${media.greaterThan("medium")`
       padding-top: calc(${theme.spacings.xxlarge} * 3);
-      clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 100%);
+      clip-path: polygon(0 13%, 100% 6%, 100% 100%, 0 100%);
+    `}
+    ${media.between("medium", "large")`
+      padding-top: calc(${theme.spacings.xxlarge} * 5);
+      clip-path: polygon(0 14%, 100% 10%, 100% 100%, 0 
+        100%);
     `}
     ${media.lessThan("medium")`
       padding-top: calc(${theme.spacings.xxlarge} * 5);
-      clip-path: polygon(0 13%, 100% 10%, 100% 100%, 0 
+      clip-path: polygon(0 11%, 100% 10%, 100% 100%, 0 
         100%);
     `}
     border-bottom: 0.4rem solid ${theme.colors.white};
@@ -31,7 +36,10 @@ export const Content = styled.div`
     gap: ${theme.grid.gutter};
     margin-top: ${theme.spacings.medium};
     ${media.greaterThan("medium")`
-        grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+    `}
+    ${media.between("medium", "large")`
+      grid-template-columns: repeat(2, 1fr);
     `}
   `}
 `;
@@ -58,7 +66,7 @@ export const Column = styled.div`
 
 export const Description = styled.p`
   ${({ theme }) => css`
-    font-size: ${theme.font.sizes.small};
+    font-size: ${theme.font.sizes.medium};
     color: ${theme.colors.lightGray};
     margin-bottom: ${theme.spacings.small};
     ${media.greaterThan("medium")`
