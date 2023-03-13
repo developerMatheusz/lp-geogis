@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <S.Wrapper id="navbar">
       <S.LogoWrapper>
-        <Logo hideOnMobile size="normal" />
+        <Logo hideOnMobile size="large" />
       </S.LogoWrapper>
       <MediaMatch greaterThan="medium">
         <S.MenuNav>

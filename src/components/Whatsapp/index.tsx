@@ -7,7 +7,7 @@ const Whatsapp = () => {
       target="_blank"
       rel="noreferrer"
     >
-      <img src="/img/whatsapp.png" alt="Logo do whatsapp" />
+      <img src="/img/whatsapp.svg" alt="Logo do whatsapp" />
     </S.Wrapper>
   );
 };

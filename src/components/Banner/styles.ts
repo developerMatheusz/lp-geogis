@@ -27,6 +27,9 @@ export const Image = styled.div<ImageProps>`
 export const Caption = styled.div`
   ${({ theme }) => css`
     width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.7);
     padding: ${theme.spacings.small};
     ${media.greaterThan("medium")`
@@ -40,11 +43,11 @@ export const Caption = styled.div`
 
 export const Title = styled.h2`
   ${({ theme }) => css`
-    font-size: ${theme.font.sizes.large};
+    font-size: ${theme.font.sizes.xxlarge};
     font-weight: ${theme.font.bold};
     color: ${theme.colors.white};
     ${media.greaterThan("medium")`
-      font-size: ${theme.font.sizes.xxlarge};
+      font-size: ${theme.font.sizes.huge};
     `}
   `}
 `;
@@ -52,15 +55,15 @@ export const Title = styled.h2`
 export const Subtitle = styled.h3`
   ${({ theme }) => css`
     color: ${theme.colors.white};
-    font-size: ${theme.font.sizes.small};
+    font-size: ${theme.font.sizes.large};
     font-weight: ${theme.font.normal};
     margin-bottom: ${theme.spacings.xsmall};
     strong {
-      color: ${theme.colors.green};
+      color: ${theme.colors.secondary};
       font-weight: ${theme.font.bold};
     }
     ${media.greaterThan("medium")`
-            font-size: ${theme.font.sizes.large};
-        `}
+      font-size: ${theme.font.sizes.xxlarge};
+    `}
   `}
 `;

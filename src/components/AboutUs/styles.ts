@@ -61,6 +61,9 @@ export const ContainerIcon = styled.div`
       transform: rotate(45deg);
       transition: 0.4s;
     }
+    ${media.lessThan("medium")`
+      margin-bottom: 0.5rem;
+    `}
   `}
 `;
 
@@ -71,6 +74,5 @@ export const Description = styled.p`
     ${media.greaterThan("medium")`
       max-width: 30rem;
     `}
-    word-break: break-all;
   `}
 `;

@@ -47,10 +47,9 @@ export const Wrapper = styled.button<WrapperProps>`
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(180deg, #101f78, #1c31a5);
+    background: #101f78;
     cursor: pointer;
     color: ${theme.colors.white};
-    background: linear-gradient(180deg, #1c31a5 0%, #101f78 50%);
     cursor: pointer;
     color: ${theme.colors.white};
     border: 0;
@@ -58,10 +57,10 @@ export const Wrapper = styled.button<WrapperProps>`
     padding: ${theme.spacings.xxsmall};
     text-decoration: none;
     &:hover {
-      background: ${minimal
-        ? "none"
-        : "linear-gradient(180deg, #020f59 0%, #101f78 50%)"};
+      background: ${minimal ? "none" : "#020f59"};
     }
+    transition: 0.3s;
+    box-shadow: 0rem 0.15rem 0.15rem rgba(0, 0, 0, 0.5);
 
     ${!!size && wrapperModifiers[size](theme)};
     ${!!fullWidth && wrapperModifiers.fullWidth()};
