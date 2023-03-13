@@ -4,17 +4,19 @@ import Logo from "../Logo";
 
 const Header = () => {
   return (
-    <S.Wrapper>
+    <S.Wrapper id="navbar">
       <S.LogoWrapper>
         <Logo hideOnMobile size="normal" />
       </S.LogoWrapper>
       <MediaMatch greaterThan="medium">
         <S.MenuNav>
           <S.MenuLink href="/">INÍCIO</S.MenuLink>
-          <S.MenuLink href="/">SOBRE NÓS</S.MenuLink>
-          <S.MenuLink href="/">PORTIFÓLIO</S.MenuLink>
-          <S.MenuLink href="/">SERVIÇOS</S.MenuLink>
-          <S.MenuLink href="/">ECOLETASOCIAL</S.MenuLink>
+          <S.MenuLink href="#about-us">SOBRE NÓS</S.MenuLink>
+          <S.MenuLink href="#last-news">ÚLTIMAS NOTÍCIAS</S.MenuLink>
+          <S.MenuLink href="#contact">CONTATO</S.MenuLink>
+          <S.MenuLink href="https://ecoletasocial.com.br/" target="_blank">
+            ECOLETASOCIAL
+          </S.MenuLink>
         </S.MenuNav>
       </MediaMatch>
       <MediaMatch lessThan="medium">

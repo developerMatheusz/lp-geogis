@@ -10,6 +10,8 @@ import { GeoCardProps } from "../../components/GeoCard";
 import Showcase from "../../components/ShowCase";
 import FormFeedback from "../../components/FormFeedback";
 import AdditionalInformation from "@/components/AdditionalInformation";
+import Whatsapp from "@/components/Whatsapp";
+import Redirect from "@/components/Redirect";
 
 export type HomeTemplateProps = {
   banners: BannerProps[];
@@ -20,13 +22,9 @@ const Home = ({ banners, news }: HomeTemplateProps) => {
   return (
     <S.Wrapper>
       <Header />
-      <Container>
-        <S.SectionBanner>
-          <SliderNews items={banners} />
-        </S.SectionBanner>
-      </Container>
+      <SliderNews items={banners} />
       <AboutUs />
-      <S.SectionNews>
+      <S.SectionNews id="last-news">
         <Showcase title="ÚLTIMAS NOTÍCIAS" news={news} />
       </S.SectionNews>
       <S.SectionForm>
@@ -35,6 +33,8 @@ const Home = ({ banners, news }: HomeTemplateProps) => {
         </ContainerForm>
       </S.SectionForm>
       <AdditionalInformation />
+      <Whatsapp />
+      <Redirect />
       <S.SectionFooter>
         <Container>
           <Footer />

@@ -5,7 +5,7 @@ import * as S from "./styles";
 
 const Footer = () => {
   return (
-    <S.Wrapper>
+    <S.Wrapper id="contact">
       <Logo size="normal" />
       <S.Content>
         <S.Column>
@@ -43,8 +43,7 @@ const Footer = () => {
           <nav aria-labelledby="footer resources">
             <Link href="/">Início</Link>
             <Link href="/about-us">Sobre nós</Link>
-            <Link href="/portifolio">Portifólio</Link>
-            <Link href="/services">Serviços</Link>
+            <Link href="/services">Últimas notícias</Link>
             <Link href="/ecoleta">Ecoletasocial</Link>
           </nav>
         </S.Column>

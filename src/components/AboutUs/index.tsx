@@ -15,7 +15,7 @@ const AboutUs = ({
   description = "Geotecnologia é basicamente o conglomerado de tecnologias para colhimento, processamento, análise e oferta de informações com referência geográfica. Previamente, permita-nos a apresentarmos."
 }: AboutUsProps) => {
   return (
-    <S.Wrapper>
+    <S.Wrapper id="about-us">
       <S.Content>
         <S.Column>
           <Heading color="white" lineBottom lineColor="secondary" size="medium">

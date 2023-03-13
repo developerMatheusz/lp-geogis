@@ -1,5 +1,3 @@
-import { ArrowBackIos as ArrowLeft } from "styled-icons/material-outlined";
-import { ArrowForwardIos as ArrowRight } from "styled-icons/material-outlined";
 import Banner, { BannerProps } from "../Banner";
 import Slider, { SliderSettings } from "../Slider";
 import * as S from "./styles";
@@ -9,22 +7,22 @@ export type BannerSliderProps = {
 };
 
 const settings: SliderSettings = {
+  dots: false,
   autoplay: true,
   autoplaySpeed: 8000,
   fade: true,
-  arrows: true,
+  arrows: false,
   infinite: true,
   responsive: [
     {
       breakpoint: 1170,
       settings: {
+        dots: false,
         vertical: false,
         verticalSwiping: false
       }
     }
-  ],
-  nextArrow: <ArrowRight aria-label="next image" />,
-  prevArrow: <ArrowLeft aria-label="previous image" />
+  ]
 };
 
 const SliderNews = ({ items }: BannerSliderProps) => {

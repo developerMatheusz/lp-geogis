@@ -9,19 +9,13 @@ export const Wrapper = styled.div`
     padding-bottom: ${theme.spacings.xsmall};
     padding-top: ${theme.spacings.xxlarge};
     background-color: rgba(56, 109, 189, 0.38);
-    &:hover {
-      background-color: rgba(56, 109, 189, 0.58);
-    }
-    clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 100%);
     ${media.greaterThan("medium")`
-      padding-top: calc(${theme.spacings.xxlarge} * 1);
-      clip-path: polygon(0 20%, 100% 5%, 100% 100%, 0 100%);
+      padding-top: calc(${theme.spacings.xxlarge} * 0.5);
     `}
     ${media.lessThan("medium")`
-      padding-top: calc(${theme.spacings.xxlarge} * 1);
-      clip-path: polygon(0 20%, 100% 5%, 100% 100%, 0 100%);
+      padding-top: calc(${theme.spacings.xxlarge} * 0.5);
     `}
-    border-bottom: 0.2rem solid ${theme.colors.white};
+    border-bottom: 0.1rem solid ${theme.colors.white};
   `}
 `;
 

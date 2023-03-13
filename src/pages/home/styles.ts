@@ -2,12 +2,7 @@ import styled, { css } from "styled-components";
 import media from "styled-media-query";
 
 export const Wrapper = styled.div`
-  ${({ theme }) => css`
-    > Header {
-      border-bottom: 0.2rem solid ${theme.colors.white};
-    }
-    background-image: url(/img/testimonial-bg.jpg);
-  `}
+  background-image: url(/img/testimonial-bg.jpg);
 `;
 
 export const SectionBanner = styled.section`
@@ -23,49 +18,30 @@ export const SectionBanner = styled.section`
 
 export const SectionNews = styled.div`
   ${({ theme }) => css`
-    border-bottom: 0.2rem solid ${theme.colors.white};
     margin-top: ${theme.spacings.large};
-    padding-bottom: ${theme.spacings.xsmall};
+    padding-bottom: ${theme.spacings.xxsmall};
     padding-top: ${theme.spacings.xxlarge};
     background-color: rgba(56, 109, 189, 0.38);
-    &:hover {
-      background-color: rgba(56, 109, 189, 0.58);
-    }
-    clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 100%);
     ${media.greaterThan("medium")`
-      padding-top: calc(${theme.spacings.xxlarge} * 2);
-      clip-path: polygon(0 16%, 100% 5%, 100% 100%, 0 100%);
+      padding-top: calc(${theme.spacings.xxlarge} * 0.5);
     `}
     ${media.lessThan("medium")`
-      padding-top: calc(${theme.spacings.xxlarge} * 2);
-      clip-path: polygon(0 16%, 100% 5%, 100% 100%, 0 100%);
+      padding-top: calc(${theme.spacings.xxlarge} * 0.5);
     `}
   `}
 `;
 
 export const SectionForm = styled.div`
   ${({ theme }) => css`
-    border-bottom: 0.2rem solid ${theme.colors.white};
     margin-top: ${theme.spacings.large};
     padding-bottom: ${theme.spacings.xsmall};
     padding-top: ${theme.spacings.medium};
     background-color: rgba(56, 109, 189, 0.38);
-    &:hover {
-      background-color: rgba(56, 109, 189, 0.58);
-    }
-    clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 100%);
     ${media.greaterThan("medium")`
-      padding-top: calc(${theme.spacings.xxlarge} * 1);
-      clip-path: polygon(0 5%, 100% 18%, 100% 100%, 0 100%);
-    `}
-    ${media.between("medium", "large")`
-      padding-top: calc(${theme.spacings.xxlarge} * 1);
-      clip-path: polygon(0 10%, 100% 22%, 100% 100%, 0 
-      100%);
+      padding-top: calc(${theme.spacings.xxlarge} * 0.5);
     `}
     ${media.lessThan("medium")`
-      padding-top: calc(${theme.spacings.xxlarge} * 1);
-      clip-path: polygon(0 10%, 100% 22%, 100% 100%, 0 100%);
+      padding-top: calc(${theme.spacings.xxlarge} * 0.5);
     `}
   `}
 `;
