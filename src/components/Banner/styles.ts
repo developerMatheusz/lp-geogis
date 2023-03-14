@@ -2,24 +2,24 @@ import styled from "styled-components";
 import { css } from "styled-components";
 import media from "styled-media-query";
 
-export const Wrapper = styled.main`
-  position: relative;
-`;
-
 type ImageProps = {
   src: string;
 };
+
+export const Wrapper = styled.main`
+  position: relative;
+`;
 
 export const Image = styled.div<ImageProps>`
   ${({ theme, src }) => css`
     width: 100%;
     height: 23rem;
-    background-color: ${theme.colors.lightGray};
     background-image: url(${src});
+    background-color: ${theme.colors.lightGray};
     background-position: center center;
     background-size: cover;
     ${media.greaterThan("medium")`
-      height: 58rem;
+      height: 60rem;
     `}
   `}
 `;

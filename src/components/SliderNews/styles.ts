@@ -4,9 +4,6 @@ import media from "styled-media-query";
 
 export const Wrapper = styled.section`
   ${({ theme }) => css`
-    ${media.lessThan("huge")`
-      overflow-x: hidden;
-    `}
     .slick-dots {
       list-style: none;
       display: flex !important;
@@ -48,5 +45,8 @@ export const Wrapper = styled.section`
     }
     cursor: pointer;
     box-shadow: 0.1rem ${theme.colors.lightGray};
+    ${media.lessThan("huge")`
+      overflow-x: hidden;
+    `}
   `}
 `;

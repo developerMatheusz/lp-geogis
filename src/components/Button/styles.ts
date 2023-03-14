@@ -51,16 +51,15 @@ export const Wrapper = styled.button<WrapperProps>`
     cursor: pointer;
     color: ${theme.colors.white};
     cursor: pointer;
-    color: ${theme.colors.white};
     border: 0;
     border-radius: ${theme.border.radius};
     padding: ${theme.spacings.xxsmall};
     text-decoration: none;
     &:hover {
-      background: ${minimal ? "none" : "#020f59"};
+      background: ${minimal ? "none" : `${theme.colors.blue}`};
     }
     transition: 0.3s;
-    box-shadow: 0rem 0.15rem 0.15rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0rem 0.2rem 0.2rem rgba(255, 255, 255, 0.2);
 
     ${!!size && wrapperModifiers[size](theme)};
     ${!!fullWidth && wrapperModifiers.fullWidth()};

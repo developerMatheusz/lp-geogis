@@ -12,12 +12,12 @@ export type MediaMatchProps = {
 const mediaMatchModifiers = {
   lessThan: (size: breakpoint) => css`
     ${media.lessThan(size)`
-        display: block;
+      display: block;
     `}
   `,
   greaterThan: (size: breakpoint) => css`
     ${media.greaterThan(size)`
-        display: block;
+      display: block;
     `}
   `
 };

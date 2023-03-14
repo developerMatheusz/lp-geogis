@@ -9,18 +9,19 @@ export const Wrapper = styled.header`
     padding: ${theme.spacings.small} 0;
     position: relative;
     background-color: rgba(1, 9, 55, 0.6);
+    transition: 0.3s;
     &:hover {
       background-color: rgba(1, 9, 55, 0.3);
-      transition: 0.3s;
     }
   `}
 `;
 
-export const LogoWrapper = styled.div`
-  ${media.lessThan("medium")`
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+export const MenuNav = styled.div`
+  ${({ theme }) => css`
+    ${media.greaterThan("medium")`
+      margin-left: ${theme.spacings.small};
+    `}
+    margin-left: ${theme.spacings.small};
   `}
 `;
 
@@ -28,10 +29,7 @@ export const MenuLink = styled.a`
   ${({ theme }) => css`
     position: relative;
     color: ${theme.colors.white};
-    font-size: ${theme.font.sizes.large};
-    ${media.lessThan("medium")`
-      font-size: ${theme.font.sizes.medium};
-    `}
+    font-size: ${theme.font.sizes.xxlarge};
     margin: 0.3rem ${theme.spacings.small} 0;
     text-decoration: none;
     text-align: center;
@@ -42,7 +40,7 @@ export const MenuLink = styled.a`
         display: block;
         height: 0.3rem;
         background-color: ${theme.colors.secondary};
-        animation: hoverAnimation 0.2s forwards;
+        animation: hoverAnimation 0.3s forwards;
       }
       @keyframes hoverAnimation {
         from {
@@ -55,14 +53,14 @@ export const MenuLink = styled.a`
         }
       }
     }
-  `}
-`;
-
-export const MenuNav = styled.div`
-  ${({ theme }) => css`
-    ${media.greaterThan("medium")`
-      margin-left: ${theme.spacings.small};
+    ${media.lessThan("medium")`
+      font-size: ${theme.font.sizes.xlarge};
     `}
-    margin-left: ${theme.spacings.small};
+    ${media.between("medium", "large")`
+      font-size: ${theme.font.sizes.large};
+    `}
+    ${media.between("small", "large")`
+      font-size: ${theme.font.sizes.medium};
+    `}
   `}
 `;

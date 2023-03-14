@@ -1,8 +1,8 @@
 import styled, { css } from "styled-components";
 import { Container } from "../Container";
+import media from "styled-media-query";
 import * as HeadingStyles from "../Heading/styles";
 import * as GeoCardStyles from "../GeoCardSlider/styles";
-import media from "styled-media-query";
 
 export const Wrapper = styled(Container).attrs({ as: "section" })`
   ${({ theme }) => css`

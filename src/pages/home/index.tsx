@@ -1,17 +1,17 @@
-import { BannerProps } from "@/components/Banner";
-import Footer from "../../components/Footer";
-import { Container } from "../../components/Container";
-import { ContainerForm } from "../../components/ContainerForm";
-import Header from "../../components/Header";
-import SliderNews from "../../components/SliderNews";
-import * as S from "./styles";
-import AboutUs from "../../components/AboutUs";
-import { GeoCardProps } from "../../components/GeoCard";
-import Showcase from "../../components/ShowCase";
-import FormFeedback from "../../components/FormFeedback";
+import Footer from "@/components/Footer";
+import { Container } from "@/components/Container";
+import { ContainerForm } from "@/components/ContainerForm";
+import Header from "@/components/Header";
+import SliderNews from "@/components/SliderNews";
+import AboutUs from "@/components/AboutUs";
+import Showcase from "@/components/ShowCase";
+import FormFeedback from "@/components/FormFeedback";
 import AdditionalInformation from "@/components/AdditionalInformation";
 import Whatsapp from "@/components/Whatsapp";
 import Redirect from "@/components/Redirect";
+import { BannerProps } from "@/components/Banner";
+import { GeoCardProps } from "@/components/GeoCard";
+import * as S from "./styles";
 
 export type HomeTemplateProps = {
   banners: BannerProps[];

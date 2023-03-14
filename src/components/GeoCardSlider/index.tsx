@@ -6,12 +6,12 @@ import * as S from "./styles";
 
 export type GeoCardSliderProps = {
   items: GeoCardProps[];
-  color?: "white" | "black";
+  color?: "white" | "secondary";
 };
 
 const settings: SliderSettings = {
   autoplay: true,
-  autoplaySpeed: 4000,
+  autoplaySpeed: 8000,
   arrows: true,
   slidesToShow: 4,
   infinite: true,

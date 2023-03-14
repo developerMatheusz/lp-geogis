@@ -26,7 +26,7 @@ const GlobalStyles: GlobalStyleComponent<
 
   ${({ theme, removeBg }) => css`
     html {
-      font-size: 62.5%;
+      font-size: 62.55%;
       scroll-behavior: smooth;
     }
 

@@ -1,5 +1,4 @@
-import styled from "styled-components";
-import { css } from "styled-components";
+import styled, { css } from "styled-components";
 import media from "styled-media-query";
 import { GeoCardSliderProps } from ".";
 
@@ -7,9 +6,6 @@ type WrapperProps = Pick<GeoCardSliderProps, "color">;
 
 export const Wrapper = styled.section<WrapperProps>`
   ${({ theme, color }) => css`
-    ${media.lessThan("huge")`
-      overflow-x: hidden;
-    `}
     .slick-track,
     .slick-list {
       display: flex;
@@ -22,14 +18,6 @@ export const Wrapper = styled.section<WrapperProps>`
     .slick-list {
       margin: 0 -${theme.spacings.xxsmall};
     }
-    ${media.greaterThan("large")`
-      .slick-slide > div {
-        margin: 0 ${theme.spacings.xsmall};
-      }
-      .slick-list {
-        margin: 0 -${theme.spacings.xsmall};
-      }
-    `}
     .slick-prev,
     .slick-next {
       display: block;
@@ -41,8 +29,9 @@ export const Wrapper = styled.section<WrapperProps>`
       height: 2.5rem;
       padding: 0;
       transform: translate(0, -50%);
+      transition: 0.3s;
       &:hover {
-        color: ${theme.colors.gray};
+        color: ${theme.colors.secondary};
         transition: 0.3s;
       }
     }
@@ -56,5 +45,16 @@ export const Wrapper = styled.section<WrapperProps>`
     .slick-next.slick-disabled {
       visibility: hidden;
     }
+    ${media.lessThan("huge")`
+      overflow-x: hidden;
+    `}
+    ${media.greaterThan("large")`
+      .slick-slide > div {
+        margin: 0 ${theme.spacings.xsmall};
+      }
+      .slick-list {
+        margin: 0 -${theme.spacings.xsmall};
+      }
+    `}
   `}
 `;

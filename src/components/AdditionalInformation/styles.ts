@@ -4,18 +4,11 @@ import media from "styled-media-query";
 export const Wrapper = styled.div`
   ${({ theme }) => css`
     position: relative;
+    margin-top: ${theme.spacings.xxlarge};
     padding: ${theme.spacings.small};
-    margin-top: ${theme.spacings.large};
-    padding-bottom: ${theme.spacings.xsmall};
-    padding-top: ${theme.spacings.xxlarge};
+    padding-top: calc(${theme.spacings.xxlarge} * 1);
+    padding-bottom: ${theme.spacings.xxlarge};
     background-color: rgba(56, 109, 189, 0.38);
-    ${media.greaterThan("medium")`
-      padding-top: calc(${theme.spacings.xxlarge} * 0.5);
-    `}
-    ${media.lessThan("medium")`
-      padding-top: calc(${theme.spacings.xxlarge} * 0.5);
-    `}
-    border-bottom: 0.1rem solid ${theme.colors.white};
   `}
 `;
 
@@ -35,44 +28,33 @@ export const Content = styled.div`
     ${media.between("medium", "large")`
       grid-template-columns: repeat(2, 1fr);
     `}
+    ${media.lessThan("medium")`
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      > div {
+        > h2 {
+          font-size: ${theme.font.sizes.xxlarge};
+        }
+        > p {
+          font-size: ${theme.font.sizes.large};
+        }
+      }
+    `}
   `}
 `;
 
 export const Column = styled.div`
   ${({ theme }) => css`
-    a,
-    span {
-      display: block;
-      color: ${theme.colors.white};
-      text-decoration: none;
-      margin-bottom: ${theme.spacings.xxsmall};
-      font-size: ${theme.font.sizes.small};
-    }
-    a:hover {
-      text-decoration: underline;
-    }
     > svg {
       width: 6rem;
       color: ${theme.colors.white};
     }
-    ${media.lessThan("medium")`
-      > svg {
-        width: 4rem;
-      }
-      a, span, h2, p {
-        font-size: ${theme.font.sizes.small};
-      }
-    `}
   `}
 `;
 
 export const Description = styled.p`
   ${({ theme }) => css`
-    font-size: ${theme.font.sizes.medium};
+    font-size: ${theme.font.sizes.xlarge};
     color: ${theme.colors.lightGray};
-    ${media.greaterThan("medium")`
-      max-width: 30rem;
-    `}
-    word-break: break-all;
   `}
 `;

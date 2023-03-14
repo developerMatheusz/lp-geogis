@@ -1,8 +1,8 @@
 import { NewMessage } from "@styled-icons/entypo/NewMessage";
 import Button from "../Button";
 import TextField from "../TextField";
-import { FormWrapper } from "../Form";
 import Logo from "../Logo";
+import { FormWrapper } from "../Form";
 
 const FormFeedback = () => {
   return (

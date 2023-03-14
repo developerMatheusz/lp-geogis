@@ -1,28 +1,32 @@
-import Heading from "../Heading";
 import { PhotoCameraFront as Photo } from "@styled-icons/material/PhotoCameraFront";
 import { PhotoLibrary } from "@styled-icons/material-outlined/PhotoLibrary";
 import { BuildingHouse } from "@styled-icons/boxicons-regular/BuildingHouse";
 import { HouseDoor as House } from "@styled-icons/bootstrap/HouseDoor";
 import { DeveloperBoard } from "@styled-icons/fluentui-system-regular/DeveloperBoard";
+import Heading from "../Heading";
+import MediaMatch from "../MediaMatch";
 import * as S from "./styles";
 
-export type AboutUsProps = {
-  title?: string;
-  description?: string;
-};
-
-const AboutUs = ({
-  title = "VOCÊ JÁ SE QUESTIONOU O QUE É GEOTECNOLOGIA?",
-  description = "Geotecnologia é basicamente o conglomerado de tecnologias para colhimento, processamento, análise e oferta de informações com referência geográfica. Previamente, permita-nos a apresentarmos."
-}: AboutUsProps) => {
+const AboutUs = () => {
   return (
     <S.Wrapper id="about-us">
       <S.Content>
         <S.Column>
-          <Heading color="white" lineBottom lineColor="secondary" size="medium">
-            {title}
-          </Heading>
-          <S.Description>{description}</S.Description>
+          <MediaMatch greaterThan="medium">
+            <Heading lineBottom lineColor="secondary" size="huge">
+              VOCÊ JÁ SE QUESTIONOU O QUE É GEOTECNOLOGIA?
+            </Heading>
+          </MediaMatch>
+          <MediaMatch lessThan="medium">
+            <Heading lineBottom lineColor="secondary">
+              VOCÊ JÁ SE QUESTIONOU O QUE É GEOTECNOLOGIA?
+            </Heading>
+          </MediaMatch>
+          <S.Description>
+            Geotecnologia é o conglomerado de tecnologias para colhimento,
+            processamento, análise e fornecimento de informações com referência
+            geográfica. Previamente, permita-nos a apresentarmos.
+          </S.Description>
         </S.Column>
         <S.Column>
           <S.ContainerIcon>
@@ -31,13 +35,13 @@ const AboutUs = ({
           <Heading color="white">Regularização de Imóveis Urbanos</Heading>
           <S.Description>
             Conforme a Constituição Federal, um dos nossos direitos fundamentais
-            e humano são as garantias do direito à moradia. A regularização
+            e humano são a garantia do direito à moradia. A regularização
             fundiária veio como uma grande conquista para o amparo daqueles que
             vivem em núcleos habitacionais informais, não possuindo de fato a
-            propriedade, apesar da irregularidade de imóveis no país ser um
+            propriedade - apesar da irregularidade de imóveis no país ser um
             problema histórico de invasão, loteamentos feitos sem observância da
-            Lei, de terrenos e imóveis vendidos de forma ilegal e de construções
-            sem projeto aprovado pelas Prefeitura Municipais/Estado.
+            lei, de terrenos e imóveis vendidos de forma ilegal e de construções
+            sem projeto aprovado pelas prefeituras Municipais/Estado.
           </S.Description>
         </S.Column>
         <S.Column>
@@ -46,16 +50,16 @@ const AboutUs = ({
           </S.ContainerIcon>
           <Heading color="white">Regularização de Imóveis Rurais</Heading>
           <S.Description>
-            A posse e propriedade são propósito que merece atenção especial da
-            sociedade, pois pode não parecer, mas é um procedimento muito
-            importante para ter uma habitação digna para produção de plantio,
-            agricultura, pecuaríssimo e assim por diante. Quando o assentamento
-            é irregular, gera barreira para os posseiros como exaustão dos
-            solos, baixa produtividade das culturas, baixos preços para os
-            produtos agrícolas, dificuldades de acesso ao crédito rural, etc.
-            Através da regularização rural pode viabilizar as melhorias
+            A posse e propriedade são propósitos que merecem atenção especial da
+            sociedade, pois podem não parecer, mas é um procedimento muito
+            importante ter uma habitação digna para produção de plantio,
+            agricultura, pecuária e assim por diante. Quando o assentamento é
+            irregular, gera barreira para os posseiros como exaustão dos solos,
+            baixa produtividade das culturas, baixos preços para os produtos
+            agrícolas, dificuldades de acesso ao crédito rural, etc. Através da
+            regularização rural é possível viabilizar as melhorias
             correlacionadas a essas necessidades para a produtividade
-            consolidada, com a evidência efetiva subsistência socioeconômica
+            consolidada, com a evidência efetiva de subsistência socioeconômica
             sustentável de núcleos familiares e segmentos sociais com tradições
             campesinas ou opção pela vida rural.
           </S.Description>
@@ -80,14 +84,15 @@ const AboutUs = ({
           </S.ContainerIcon>
           <Heading color="white">Aerofotogrametria</Heading>
           <S.Description>
-            É de extrema importância para a geotecnologia, classificado como um
-            tipo de fotografia aérea para produzir medições operacionalmente
-            aprofundada, com qualidade e precisão fundamentais para os projetos
-            de aerolevantamento. Os principais itens para essa tarefa são
-            Ortofotos e Fotos Aéreas, curvas de nível, perfilamento a laser
-            LiDAR (Light Detection And Ranging), modelos digitais de elevação
-            (MDE), simulações em ambiente 3D, cadastro urbanos e dentre outros
-            que auxiliam nas etapas desta via.
+            É de extrema importância para a geotecnologia a Aerofotogrametria.
+            Esse tipo de atividade é classificado como um tipo de fotografia
+            aérea para produzir medições operacionalmente aprofundadas, com
+            qualidade e precisão fundamentais para os projetos de
+            aerolevantamento. Os principais itens para essa tarefa são ortofotos
+            e fotos aéreas, curvas de nível, perfilamento a laser LIDAR (Light
+            Detection And Ranging), modelos digitais de elevação (MDE),
+            simulações em ambiente 3D, cadastros urbanos e dentre outros que
+            auxiliam nas etapas desta via.
           </S.Description>
         </S.Column>
         <S.Column>

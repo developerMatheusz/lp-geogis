@@ -16,7 +16,7 @@ export const Content = styled.div`
     gap: ${theme.grid.gutter};
     margin-top: ${theme.spacings.medium};
     ${media.greaterThan("medium")`
-        grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4, 1fr);
     `}
   `}
 `;
@@ -31,6 +31,7 @@ export const Column = styled.div`
       text-decoration: none;
       margin-bottom: ${theme.spacings.xxsmall};
       font-size: ${theme.font.sizes.small};
+      text-align: justify !important;
     }
     a:hover {
       text-decoration: underline;

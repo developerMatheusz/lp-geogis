@@ -9,9 +9,9 @@ export const Wrapper = styled.a`
     transition: 0.3s;
     padding: 0.5rem;
     border-radius: 100%;
+    width: 50px;
     &:hover {
       background: #386dbd;
     }
-    width: 50px;
   }
 `;

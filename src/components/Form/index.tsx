@@ -1,22 +1,21 @@
-import styled from "styled-components";
-import { css } from "styled-components";
+import styled, { css } from "styled-components";
+import { darken } from "polished";
 import * as TextFieldStyles from "../TextField/styles";
 import * as ButtonStyles from "../Button/styles";
-import { darken } from "polished";
 
 export const FormWrapper = styled.div`
   ${({ theme }) => css`
-    ${TextFieldStyles.Wrapper} {
-      margin: ${theme.spacings.xxsmall} 0;
-    }
-    ${ButtonStyles.Wrapper} {
-      margin: ${theme.spacings.xsmall} auto ${theme.spacings.xsmall};
-    }
     > div {
       display: flex;
       justify-content: center;
       align-items: center;
       padding-bottom: 0.2rem;
+    }
+    ${TextFieldStyles.Wrapper} {
+      margin: ${theme.spacings.xxsmall} 0;
+    }
+    ${ButtonStyles.Wrapper} {
+      margin: ${theme.spacings.xsmall} auto ${theme.spacings.xsmall};
     }
   `}
 `;

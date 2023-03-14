@@ -20,7 +20,7 @@ export default {
       medium: "1.6rem",
       large: "1.8rem",
       xlarge: "2.0rem",
-      xxlarge: "2.8rem",
+      xxlarge: "2.4rem",
       huge: "3.5rem"
     }
   },
@@ -35,7 +35,8 @@ export default {
     gray: "#8F8F8F",
     darkGray: "#2E2F42",
     red: "#FF6347",
-    green: "#36802d"
+    green: "#36802d",
+    blue: "#020f59"
   },
   spacings: {
     xxsmall: "0.8rem",

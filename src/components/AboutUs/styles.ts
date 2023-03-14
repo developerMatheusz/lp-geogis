@@ -5,14 +5,14 @@ export const Wrapper = styled.div`
   ${({ theme }) => css`
     position: relative;
     padding: ${theme.spacings.small};
-    padding-bottom: ${theme.spacings.xsmall};
     padding-top: ${theme.spacings.xxlarge};
+    padding-bottom: ${theme.spacings.xxlarge};
     background-color: rgba(56, 109, 189, 0.38);
     ${media.greaterThan("medium")`
-      padding-top: calc(${theme.spacings.xxlarge} * 0.5);
+      padding-top: calc(${theme.spacings.xxlarge} * 0.7);
     `}
     ${media.lessThan("medium")`
-      padding-top: calc(${theme.spacings.xxlarge} * 0.5);
+      padding-top: calc(${theme.spacings.xxlarge} * 0.8);
     `}
   `}
 `;
@@ -33,37 +33,22 @@ export const Content = styled.div`
 `;
 
 export const Column = styled.div`
-  ${({ theme }) => css`
-    a,
-    span {
-      display: block;
-      color: ${theme.colors.white};
-      text-decoration: none;
-      margin-bottom: ${theme.spacings.xxsmall};
-      font-size: ${theme.font.sizes.small};
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    max-width: 300px;
-    max-height: auto;
-  `}
+  > h2 {
+    text-align: justify !important;
+  }
 `;
 
 export const ContainerIcon = styled.div`
   ${({ theme }) => css`
+    margin-bottom: 0.9rem;
     max-width: 6.5rem;
     border: 0.3rem solid ${theme.colors.white};
-    ${media.lessThan("medium")`
-      display: block;
-      margin: auto;
-    `}
+    transition: 0.4s;
     > svg {
       padding: 0.8rem;
       width: 6rem;
       color: ${theme.colors.white};
     }
-    transition: 0.4s;
     &:hover {
       transform: rotate(45deg);
       transition: 0.4s;
@@ -75,7 +60,9 @@ export const ContainerIcon = styled.div`
       }
     }
     ${media.lessThan("medium")`
-      margin-bottom: 0.5rem;
+      display: block;
+      margin: auto;
+      margin-bottom: 0.8rem;
     `}
   `}
 `;
@@ -84,8 +71,6 @@ export const Description = styled.p`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.medium};
     color: ${theme.colors.lightGray};
-    ${media.greaterThan("medium")`
-      max-width: 30rem;
-    `}
+    text-align: justify !important;
   `}
 `;

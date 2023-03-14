@@ -1,13 +1,13 @@
-import * as S from "./styles";
-import MediaMatch from "../MediaMatch/index";
+import MediaMatch from "../MediaMatch";
 import Logo from "../Logo";
+import * as S from "./styles";
 
 const Header = () => {
   return (
     <S.Wrapper id="navbar">
-      <S.LogoWrapper>
-        <Logo hideOnMobile size="large" />
-      </S.LogoWrapper>
+      <MediaMatch greaterThan="huge">
+        <Logo hideOnMobile size="xxlarge" />
+      </MediaMatch>
       <MediaMatch greaterThan="medium">
         <S.MenuNav>
           <S.MenuLink href="/">INÍCIO</S.MenuLink>

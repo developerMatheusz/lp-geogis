@@ -55,12 +55,16 @@ export const Content = styled.div`
   `}
 `;
 
+export const Info = styled.div`
+  max-width: calc(100% - 2.5rem);
+`;
+
 export const Title = styled.h3`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.medium};
     line-height: ${theme.font.sizes.medium};
     font-weight: ${theme.font.bold};
-    color: ${theme.colors.white};
+    color: ${theme.colors.secondary};
   `}
 `;
 
@@ -68,10 +72,6 @@ export const Description = styled.h4`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.small};
     font-weight: ${theme.font.bold};
-    color: ${theme.colors.lightGray};
+    color: ${theme.colors.white};
   `}
-`;
-
-export const Info = styled.div`
-  max-width: calc(100% - 2.5rem);
 `;
