@@ -45,14 +45,21 @@ export const Column = styled.div`
     a:hover {
       text-decoration: underline;
     }
+    max-width: 300px;
+    max-height: auto;
   `}
 `;
 
 export const ContainerIcon = styled.div`
   ${({ theme }) => css`
     max-width: 6.5rem;
-    border: 0.3rem solid ${theme.colors.secondary};
+    border: 0.3rem solid ${theme.colors.white};
+    ${media.lessThan("medium")`
+      display: block;
+      margin: auto;
+    `}
     > svg {
+      padding: 0.8rem;
       width: 6rem;
       color: ${theme.colors.white};
     }
@@ -60,6 +67,12 @@ export const ContainerIcon = styled.div`
     &:hover {
       transform: rotate(45deg);
       transition: 0.4s;
+      border: 0.3rem solid ${theme.colors.secondary};
+      > svg {
+        color: ${theme.colors.secondary};
+        transform: rotate(-45deg);
+        border: 0.3rem solid ${theme.colors.secondary};
+      }
     }
     ${media.lessThan("medium")`
       margin-bottom: 0.5rem;

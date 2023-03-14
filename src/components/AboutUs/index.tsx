@@ -3,6 +3,7 @@ import { PhotoCameraFront as Photo } from "@styled-icons/material/PhotoCameraFro
 import { PhotoLibrary } from "@styled-icons/material-outlined/PhotoLibrary";
 import { BuildingHouse } from "@styled-icons/boxicons-regular/BuildingHouse";
 import { HouseDoor as House } from "@styled-icons/bootstrap/HouseDoor";
+import { DeveloperBoard } from "@styled-icons/fluentui-system-regular/DeveloperBoard";
 import * as S from "./styles";
 
 export type AboutUsProps = {
@@ -87,6 +88,21 @@ const AboutUs = ({
             LiDAR (Light Detection And Ranging), modelos digitais de elevação
             (MDE), simulações em ambiente 3D, cadastro urbanos e dentre outros
             que auxiliam nas etapas desta via.
+          </S.Description>
+        </S.Column>
+        <S.Column>
+          <S.ContainerIcon>
+            <DeveloperBoard />
+          </S.ContainerIcon>
+          <Heading color="white">Desenvolvimento de sistemas</Heading>
+          <S.Description>
+            O futuro é o mundo digital, e a tecnologia está presente cada vez
+            mais em tudo que fazemos. Atuamos em criações de sistemas em
+            qualquer área, focando na elaboração de softwares com uma atuação em
+            diversas fases da criação do sistema operacional. Analisamos e
+            trazemos formas tecnológicas diferenciadas, considerando as
+            principais tendências do mercado e a evolução da transformação
+            digital.
           </S.Description>
         </S.Column>
       </S.Content>

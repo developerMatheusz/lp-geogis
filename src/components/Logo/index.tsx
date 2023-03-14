@@ -1,7 +1,7 @@
 import * as S from "./styles";
 
 export type LogoProps = {
-  size?: "normal" | "large";
+  size?: "normal" | "large" | "xxlarge";
   hideOnMobile?: boolean;
 };
 
