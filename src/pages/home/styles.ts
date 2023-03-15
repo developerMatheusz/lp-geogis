@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const Wrapper = styled.div`
-  background-image: url(/img/testimonial-bg.jpg);
+  background-image: url(/img/testimonial-bg.png);
 `;
 
 export const SectionNews = styled.div`
@@ -10,6 +10,10 @@ export const SectionNews = styled.div`
     padding-top: calc(${theme.spacings.xxlarge} * 1.2);
     padding-bottom: ${theme.spacings.xxsmall};
     background-color: rgba(56, 109, 189, 0.38);
+    > p {
+      text-align: center;
+      margin-bottom: 5rem;
+    }
   `}
 `;
 

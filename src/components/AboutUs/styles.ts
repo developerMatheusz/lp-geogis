@@ -25,6 +25,8 @@ export const Content = styled.div`
     margin-top: ${theme.spacings.xxsmall};
     ${media.greaterThan("medium")`
       grid-template-columns: repeat(3, 1fr);
+      padding-left: 1rem;
+      padding-right: 1rem;
     `}
     ${media.between("medium", "large")`
       grid-template-columns: repeat(2, 1fr);
@@ -33,9 +35,7 @@ export const Content = styled.div`
 `;
 
 export const Column = styled.div`
-  > h2 {
-    text-align: justify !important;
-  }
+  padding: 2px;
 `;
 
 export const ContainerIcon = styled.div`
@@ -69,8 +69,12 @@ export const ContainerIcon = styled.div`
 
 export const Description = styled.p`
   ${({ theme }) => css`
-    font-size: ${theme.font.sizes.medium};
-    color: ${theme.colors.lightGray};
     text-align: justify !important;
+    font-size: ${theme.font.sizes.xsmall};
+    color: ${theme.colors.lightGray};
+    ${media.greaterThan("medium")`
+      text-align: justify !important;
+      font-size: ${theme.font.sizes.large};
+    `}
   `}
 `;

@@ -21,7 +21,9 @@ const Header = () => {
       </MediaMatch>
       <MediaMatch lessThan="medium">
         <S.MenuLink href="/">INÍCIO</S.MenuLink>
-        <S.MenuLink href="/">ECOLETASOCIAL</S.MenuLink>
+        <S.MenuLink href="https://ecoletasocial.com.br/" target="_blank">
+          ECOLETASOCIAL
+        </S.MenuLink>
       </MediaMatch>
     </S.Wrapper>
   );

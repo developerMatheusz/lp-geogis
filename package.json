@@ -30,7 +30,8 @@
     "react-slick": "^0.29.0",
     "styled-components": "^5.3.8",
     "styled-icons": "^10.47.0",
-    "styled-media-query": "^2.1.2"
+    "styled-media-query": "^2.1.2",
+    "vlibras-nextjs": "^1.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",

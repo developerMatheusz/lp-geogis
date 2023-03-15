@@ -19,7 +19,7 @@ export const Image = styled.div<ImageProps>`
     background-position: center center;
     background-size: cover;
     ${media.greaterThan("medium")`
-      height: 60rem;
+      height: 70rem;
     `}
   `}
 `;
@@ -27,23 +27,31 @@ export const Image = styled.div<ImageProps>`
 export const Caption = styled.div`
   ${({ theme }) => css`
     width: 100%;
+    height: 20rem;
     display: grid;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: ${theme.spacings.small};
+    padding: ${theme.spacings.xsmall};
+    > h3 {
+      text-align: justify !important;
+      letter-spacing: normal;
+    }
     ${media.greaterThan("medium")`
       padding: ${theme.spacings.large};
       position: absolute;
       bottom: 0;
       left: 0;
+      > h2, h3 {
+        max-width: 100rem;
+      }
     `}
   `}
 `;
 
 export const Title = styled.h2`
   ${({ theme }) => css`
-    font-size: ${theme.font.sizes.xxlarge};
+    font-size: ${theme.font.sizes.xlarge};
     font-weight: ${theme.font.bold};
     color: ${theme.colors.secondary};
     ${media.greaterThan("medium")`
@@ -55,9 +63,8 @@ export const Title = styled.h2`
 
 export const Subtitle = styled.h3`
   ${({ theme }) => css`
-    max-width: 100rem;
     color: ${theme.colors.white};
-    font-size: ${theme.font.sizes.large};
+    font-size: ${theme.font.sizes.medium};
     font-weight: ${theme.font.normal};
     margin-bottom: ${theme.spacings.xsmall};
     strong {
@@ -67,6 +74,5 @@ export const Subtitle = styled.h3`
     ${media.greaterThan("medium")`
       font-size: ${theme.font.sizes.xxlarge};
     `}
-    text-align: justify !important;
   `}
 `;

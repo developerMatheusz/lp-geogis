@@ -1,20 +1,20 @@
 export default [
   {
-    img: "/img/work4.jpg",
+    img: "/img/work1.png",
     title: "Tecnologia que transforma a sua vida",
     subtitle:
-      "<p>Com uma equipe repleta de especialistas nas mais diversas áreas, é claro que a <strong>GeoGIS</strong> impacta a sua rotina de maneiras positivas. É por isso que trabalhamos para gerar soluções que tornem sua vida mais fácil a cada novo dia.</p>"
+      "<p>Com uma equipe repleta de especialistas nas mais diversas áreas, é claro que a <strong>GeoGIS</strong> impacta a sua rotina de maneiras positivas!</p>"
   },
   {
-    img: "/img/work5.jpg",
+    img: "/img/work2.png",
     title: "Regularização fundiária",
     subtitle:
-      "<p>A <strong>GeoGIS</strong> atua também na regularização fundiária para reconhecer os seus direitos de propriedade. Se você quer falar com quem é referência neste ramo, fale com a nossa equipe!</p>"
+      "<p>A <strong>GeoGIS</strong> atua também na regularização fundiária a fim de garantir os seus direitos de propriedade que fazem parte deste trabalho. Fale com a nossa equipe!</p>"
   },
   {
-    img: "/img/work1.jpg",
+    img: "/img/work3.png",
     title: "Você tem direito a regularização fundiária",
     subtitle:
-      "<p>A <strong>GeoGIS</strong> te ajuda a garantir que a regularização fundiária do seu lote ou imóvel seja totalmente gratuita. Conheça o impacto da geotecnologia aplicada na regularização fundiária, fale com a nossa equipe!</p>"
+      "<p>A <strong>GeoGIS</strong> já trabalhou junto à Administração para garantir esse direito a mais de 12 mil famílias em todos os requisitos técnicos.</p>"
   }
 ];

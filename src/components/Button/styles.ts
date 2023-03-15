@@ -59,7 +59,6 @@ export const Wrapper = styled.button<WrapperProps>`
       background: ${minimal ? "none" : `${theme.colors.blue}`};
     }
     transition: 0.3s;
-    box-shadow: 0rem 0.2rem 0.2rem rgba(255, 255, 255, 0.2);
 
     ${!!size && wrapperModifiers[size](theme)};
     ${!!fullWidth && wrapperModifiers.fullWidth()};

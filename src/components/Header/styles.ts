@@ -29,7 +29,7 @@ export const MenuLink = styled.a`
   ${({ theme }) => css`
     position: relative;
     color: ${theme.colors.white};
-    font-size: ${theme.font.sizes.xxlarge};
+    font-size: ${theme.font.sizes.xlarge};
     margin: 0.3rem ${theme.spacings.small} 0;
     text-decoration: none;
     text-align: center;

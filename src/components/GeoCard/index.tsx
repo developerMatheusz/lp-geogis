@@ -18,6 +18,7 @@ const GeoCard = ({ title, img, description, href }: GeoCardProps) => {
       <S.Content>
         <S.Info>
           <S.Title>{title}</S.Title>
+          <hr />
           <S.Description>{description}</S.Description>
         </S.Info>
       </S.Content>

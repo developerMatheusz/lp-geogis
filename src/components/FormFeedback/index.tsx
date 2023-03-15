@@ -11,7 +11,7 @@ const FormFeedback = () => {
       <form>
         <TextField
           name="text"
-          placeholder="Envie-nos seu feedback"
+          placeholder="Escreva seu email"
           type="text"
           icon={<NewMessage />}
         />

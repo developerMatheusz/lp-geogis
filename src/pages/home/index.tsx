@@ -9,6 +9,8 @@ import FormFeedback from "@/components/FormFeedback";
 import AdditionalInformation from "@/components/AdditionalInformation";
 import Whatsapp from "@/components/Whatsapp";
 import Redirect from "@/components/Redirect";
+import VLibra from "@/components/VLibra";
+import Video from "@/components/Video";
 import { BannerProps } from "@/components/Banner";
 import { GeoCardProps } from "@/components/GeoCard";
 import * as S from "./styles";
@@ -22,14 +24,18 @@ export type HomeTemplateProps = {
 const Home = ({ banners, news, partners }: HomeTemplateProps) => {
   return (
     <S.Wrapper>
+      <VLibra />
       <Header />
       <SliderNews items={banners} />
       <AboutUs />
       <S.SectionNews id="last-news">
-        <Showcase title="ÚLTIMAS NOTÍCIAS" news={news} />
+        <Showcase title="INSTAGRAM GEOGIS" news={news} />
       </S.SectionNews>
       <S.SectionNews id="last-news">
         <Showcase title="NOSSOS PARCEIROS" news={partners} />
+      </S.SectionNews>
+      <S.SectionNews>
+        <Video />
       </S.SectionNews>
       <S.SectionForm>
         <ContainerForm>

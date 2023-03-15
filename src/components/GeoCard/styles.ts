@@ -14,7 +14,7 @@ export const Wrapper = styled.article`
 `;
 
 export const ImageBox = styled.div`
-  height: 14rem;
+  height: 30rem;
   width: 100%;
   background: #f6f7f8;
   background-image: linear-gradient(
@@ -43,9 +43,9 @@ export const ImageBox = styled.div`
 
 export const Content = styled.div`
   ${({ theme }) => css`
-    padding: ${theme.spacings.small};
+    padding: ${theme.spacings.xsmall};
     border-radius: 5px;
-    background-color: ${theme.colors.black};
+    background-color: ${theme.colors.blue};
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -65,7 +65,13 @@ export const Title = styled.h3`
 `;
 
 export const Info = styled.div`
-  max-width: calc(100% - 2.5rem);
+  max-width: 100%;
+  > hr {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+    max-width: 100%;
+  }
 `;
 
 export const Description = styled.h4`
