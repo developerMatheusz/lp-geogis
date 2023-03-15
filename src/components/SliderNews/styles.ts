@@ -43,7 +43,6 @@ export const Wrapper = styled.section`
       flex: 1 0 auto;
       height: 100%;
     }
-    cursor: pointer;
     box-shadow: 0.1rem ${theme.colors.lightGray};
     ${media.lessThan("huge")`
       overflow-x: hidden;

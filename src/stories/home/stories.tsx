@@ -1,8 +1,8 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import Home from "@/pages/home";
-import bannersMock from "@/components/SliderNews/mock";
-import newsMock from "@/components/GeoCardSlider/mock";
+import bannersMock from "@/components/SliderNews/banners";
+import newsMock from "@/components/GeoCardSlider/news";
 
 export default {
   title: "Home",

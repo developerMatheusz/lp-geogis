@@ -45,25 +45,28 @@ export const Title = styled.h2`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.xxlarge};
     font-weight: ${theme.font.bold};
-    color: ${theme.colors.white};
+    color: ${theme.colors.secondary};
     ${media.greaterThan("medium")`
       font-size: ${theme.font.sizes.huge};
     `}
+    text-align: left;
   `}
 `;
 
 export const Subtitle = styled.h3`
   ${({ theme }) => css`
+    max-width: 100rem;
     color: ${theme.colors.white};
     font-size: ${theme.font.sizes.large};
     font-weight: ${theme.font.normal};
     margin-bottom: ${theme.spacings.xsmall};
     strong {
-      color: ${theme.colors.secondary};
+      color: ${theme.colors.green};
       font-weight: ${theme.font.bold};
     }
     ${media.greaterThan("medium")`
       font-size: ${theme.font.sizes.xxlarge};
     `}
+    text-align: justify !important;
   `}
 `;

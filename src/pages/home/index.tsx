@@ -16,9 +16,10 @@ import * as S from "./styles";
 export type HomeTemplateProps = {
   banners: BannerProps[];
   news: GeoCardProps[];
+  partners: GeoCardProps[];
 };
 
-const Home = ({ banners, news }: HomeTemplateProps) => {
+const Home = ({ banners, news, partners }: HomeTemplateProps) => {
   return (
     <S.Wrapper>
       <Header />
@@ -26,6 +27,9 @@ const Home = ({ banners, news }: HomeTemplateProps) => {
       <AboutUs />
       <S.SectionNews id="last-news">
         <Showcase title="ÚLTIMAS NOTÍCIAS" news={news} />
+      </S.SectionNews>
+      <S.SectionNews id="last-news">
+        <Showcase title="NOSSOS PARCEIROS" news={partners} />
       </S.SectionNews>
       <S.SectionForm>
         <ContainerForm>

@@ -8,7 +8,7 @@ export const Wrapper = styled.article`
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background-color: ${theme.colors.white};
+    background-color: ${theme.colors.lightGray};
     cursor: pointer;
   `}
 `;
@@ -55,10 +55,6 @@ export const Content = styled.div`
   `}
 `;
 
-export const Info = styled.div`
-  max-width: calc(100% - 2.5rem);
-`;
-
 export const Title = styled.h3`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.medium};
@@ -66,6 +62,10 @@ export const Title = styled.h3`
     font-weight: ${theme.font.bold};
     color: ${theme.colors.secondary};
   `}
+`;
+
+export const Info = styled.div`
+  max-width: calc(100% - 2.5rem);
 `;
 
 export const Description = styled.h4`

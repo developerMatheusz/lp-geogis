@@ -1,6 +1,7 @@
 import Home, { HomeTemplateProps } from "@/pages/home";
-import bannersMock from "@/components/SliderNews/mock";
-import newsMock from "@/components/GeoCardSlider/mock";
+import bannersMock from "@/components/SliderNews/banners";
+import newsMock from "@/components/GeoCardSlider/news";
+import partnersMock from "@/components/GeoCardSlider/partners";
 
 const Index = (props: HomeTemplateProps) => {
   return <Home {...props} />;
@@ -12,7 +13,8 @@ export function getServerSideProps() {
   return {
     props: {
       banners: bannersMock,
-      news: newsMock
+      news: newsMock,
+      partners: partnersMock
     }
   };
 }

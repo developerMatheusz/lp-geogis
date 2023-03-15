@@ -4,13 +4,16 @@ export type GeoCardProps = {
   title: string;
   img: string;
   description: string;
+  href?: string;
 };
 
-const GeoCard = ({ title, img, description }: GeoCardProps) => {
+const GeoCard = ({ title, img, description, href }: GeoCardProps) => {
   return (
     <S.Wrapper>
       <S.ImageBox>
-        <img src={img} alt={title} />
+        <a href={href} target="_blank" rel="noreferrer">
+          <img src={img} alt={title} />
+        </a>
       </S.ImageBox>
       <S.Content>
         <S.Info>
