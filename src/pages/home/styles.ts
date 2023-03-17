@@ -10,7 +10,7 @@ export const SectionNews = styled.div`
     padding-top: calc(${theme.spacings.xxlarge} * 1.2);
     padding-bottom: ${theme.spacings.xxsmall};
     background-color: rgba(56, 109, 189, 0.38);
-    > p {
+    > div {
       text-align: center;
       margin-bottom: 5rem;
     }

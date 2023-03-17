@@ -2,7 +2,7 @@ import MediaMatch from "../MediaMatch";
 
 const Video = () => {
   return (
-    <p>
+    <div>
       <MediaMatch greaterThan="medium">
         <iframe
           width="790"
@@ -25,7 +25,7 @@ const Video = () => {
           allowFullScreen
         ></iframe>
       </MediaMatch>
-    </p>
+    </div>
   );
 };
 
