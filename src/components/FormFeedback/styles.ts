@@ -45,9 +45,9 @@ export const Message = styled.p`
   ${({ theme }) => css`
     color: ${theme.colors.gray};
     text-align: center;
-    font-size: ${theme.font.sizes.medium};
+    font-size: ${theme.font.sizes.large};
     ${media.lessThan("medium")`
-      font-size: ${theme.font.sizes.small};
+      font-size: ${theme.font.sizes.medium};
     `}
   `}
 `;

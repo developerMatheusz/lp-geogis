@@ -1,5 +1,4 @@
-import styled from "styled-components";
-import { css } from "styled-components";
+import styled, { css } from "styled-components";
 import media from "styled-media-query";
 
 type ImageProps = {
@@ -33,10 +32,6 @@ export const Caption = styled.div`
     align-items: center;
     background-color: rgba(0, 0, 0, 0.7);
     padding: ${theme.spacings.xsmall};
-    > h3 {
-      text-align: justify !important;
-      letter-spacing: normal;
-    }
     ${media.greaterThan("medium")`
       padding: ${theme.spacings.large};
       position: absolute;
@@ -67,10 +62,6 @@ export const Subtitle = styled.h3`
     font-size: ${theme.font.sizes.medium};
     font-weight: ${theme.font.normal};
     margin-bottom: ${theme.spacings.xsmall};
-    strong {
-      color: ${theme.colors.green};
-      font-weight: ${theme.font.bold};
-    }
     ${media.greaterThan("medium")`
       font-size: ${theme.font.sizes.xxlarge};
     `}

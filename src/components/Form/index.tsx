@@ -1,6 +1,5 @@
 import styled, { css } from "styled-components";
 import { darken } from "polished";
-import * as TextFieldStyles from "../TextField/styles";
 import * as ButtonStyles from "../Button/styles";
 
 export const FormWrapper = styled.div`
@@ -10,9 +9,6 @@ export const FormWrapper = styled.div`
       justify-content: center;
       align-items: center;
       padding-bottom: 0.2rem;
-    }
-    ${TextFieldStyles.Wrapper} {
-      margin: ${theme.spacings.xxsmall} 0;
     }
     ${ButtonStyles.Wrapper} {
       margin: ${theme.spacings.xsmall} auto ${theme.spacings.xsmall};

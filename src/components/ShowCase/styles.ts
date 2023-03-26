@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
-import { Container } from "../Container";
 import media from "styled-media-query";
+import { Container } from "../Container";
 import * as HeadingStyles from "../Heading/styles";
 import * as GeoCardStyles from "../GeoCardSlider/styles";
 

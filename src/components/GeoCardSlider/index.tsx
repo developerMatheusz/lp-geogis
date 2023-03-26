@@ -1,7 +1,7 @@
-import { ArrowBackIos as ArrowLeft } from "styled-icons/material-outlined";
-import { ArrowForwardIos as ArrowRight } from "styled-icons/material-outlined";
 import GeoCard, { GeoCardProps } from "../GeoCard";
 import Slider, { SliderSettings } from "../Slider";
+import { ArrowBackIos as ArrowLeft } from "styled-icons/material-outlined";
+import { ArrowForwardIos as ArrowRight } from "styled-icons/material-outlined";
 import * as S from "./styles";
 
 export type GeoCardSliderProps = {

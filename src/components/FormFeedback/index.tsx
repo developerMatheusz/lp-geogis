@@ -1,9 +1,9 @@
-import { NewMessage } from "@styled-icons/entypo/NewMessage";
 import Button from "../Button";
 import Logo from "../Logo";
 import { FormWrapper } from "../Form";
-import * as S from "./styles";
 import { useState } from "react";
+import { NewMessage } from "@styled-icons/entypo/NewMessage";
+import * as S from "./styles";
 
 const FormFeedback = () => {
   const [content, setContent] = useState("");
@@ -32,7 +32,7 @@ const FormFeedback = () => {
           Enviar
         </Button>
         <S.Message>
-          Envie seu feedback sobre a empresa GeoGIS Tecnologia LTDA
+          Envie seu feedback sobre a empresa GeoGIS Geotecnologia LTDA
         </S.Message>
       </form>
     </FormWrapper>

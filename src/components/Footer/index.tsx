@@ -27,11 +27,7 @@ const Footer = () => {
             >
               Instagram
             </a>
-            <a
-              href="http://localhost:3000"
-              target="_blank"
-              rel="noopenner, noreferrer"
-            >
+            <a href="/" rel="noopenner, noreferrer">
               Site GeoGIS
             </a>
           </nav>
@@ -51,8 +47,9 @@ const Footer = () => {
           <Heading color="white" lineColor="secondary" lineBottom size="small">
             Localização
           </Heading>
-          <span>Avenida Senador Filinto Muller, 440 - CEP 78045-410</span>
-          <span>Goiabeiras - Cuiabá/MT</span>
+          <span>Avenida Senador Filinto Muller - </span>
+          <span>n° 440, CEP 78045-410 - </span>
+          <span>bairro Goiabeiras, Cuiabá/MT</span>
         </S.Column>
         <S.Copyright>
           GeoGIS 2023 &copy; Todos os direitos reservados.

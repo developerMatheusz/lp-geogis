@@ -1,5 +1,4 @@
-import styled from "styled-components";
-import { css } from "styled-components";
+import styled, { css } from "styled-components";
 import media from "styled-media-query";
 import * as HeadingStyles from "../Heading/styles";
 
@@ -31,7 +30,6 @@ export const Column = styled.div`
       text-decoration: none;
       margin-bottom: ${theme.spacings.xxsmall};
       font-size: ${theme.font.sizes.small};
-      text-align: justify !important;
     }
     a:hover {
       text-decoration: underline;

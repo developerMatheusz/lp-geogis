@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const Wrapper = styled.a`
   position: fixed;
-  bottom: 50px;
-  right: 0px;
+  bottom: 6rem;
+  right: 0rem;
   > img {
-    width: 40px;
+    width: 5rem;
   }
 `;

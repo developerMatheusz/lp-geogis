@@ -1,6 +1,5 @@
-import styled, { DefaultTheme } from "styled-components";
+import styled, { DefaultTheme, css } from "styled-components";
 import { darken } from "polished";
-import { css } from "styled-components";
 import { ButtonProps } from ".";
 
 export type WrapperProps = {
@@ -47,7 +46,7 @@ export const Wrapper = styled.button<WrapperProps>`
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: #101f78;
+    background: linear-gradient(180deg, #240047 0%, #1c3166 50%);
     cursor: pointer;
     color: ${theme.colors.white};
     cursor: pointer;
@@ -55,10 +54,6 @@ export const Wrapper = styled.button<WrapperProps>`
     border-radius: ${theme.border.radius};
     padding: ${theme.spacings.xxsmall};
     text-decoration: none;
-    &:hover {
-      background: ${minimal ? "none" : `${theme.colors.blue}`};
-    }
-    transition: 0.3s;
 
     ${!!size && wrapperModifiers[size](theme)};
     ${!!fullWidth && wrapperModifiers.fullWidth()};

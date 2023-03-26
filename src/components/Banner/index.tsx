@@ -12,7 +12,7 @@ const Banner = ({ img, title, subtitle }: BannerProps) => {
       <S.Image src={img} role="img" aria-label={title} />
       <S.Caption>
         <S.Title>{title}</S.Title>
-        <S.Subtitle dangerouslySetInnerHTML={{ __html: subtitle }} />
+        <S.Subtitle>{subtitle}</S.Subtitle>
       </S.Caption>
     </S.Wrapper>
   );

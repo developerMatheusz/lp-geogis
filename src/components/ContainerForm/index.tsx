@@ -9,7 +9,7 @@ export const ContainerForm = styled.div`
     padding-left: calc(${theme.grid.gutter} / 2);
     padding-right: calc(${theme.grid.gutter} / 2);
     ${media.greaterThan("medium")`
-      max-width: 468px;
+      max-width: 46.8rem;
     `}
   `}
 `;

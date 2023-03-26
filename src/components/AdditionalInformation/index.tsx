@@ -1,28 +1,34 @@
+import Heading from "../Heading";
 import { Verified } from "@styled-icons/material/Verified";
 import { Handshake } from "@styled-icons/fluentui-system-filled/Handshake";
 import { GitBranch } from "@styled-icons/boxicons-regular/GitBranch";
-import Heading from "../Heading";
 import * as S from "./styles";
 
-const AdditionalInformation = () => {
+type Icon = "Verified" | "Handshake" | "GitBranch";
+
+export type ListInformationsProps = {
+  title: string;
+  description: string;
+  icons: Icon;
+};
+
+export type AdditionalInformationProps = {
+  items: ListInformationsProps[];
+};
+
+const AdditionalInformation = ({ items }: AdditionalInformationProps) => {
   return (
     <S.Wrapper>
       <S.Content>
-        <S.Column>
-          <Verified />
-          <Heading color="green">+4 MILHÕES</Heading>
-          <S.Description>De hectares imageados</S.Description>
-        </S.Column>
-        <S.Column>
-          <Handshake />
-          <Heading color="green">+11 MIL</Heading>
-          <S.Description>Registros entregues (REURB)</S.Description>
-        </S.Column>
-        <S.Column>
-          <GitBranch />
-          <Heading color="green">+1 MILHÃO</Heading>
-          <S.Description>De hectares georreferenciados</S.Description>
-        </S.Column>
+        {items.map((item, index) => (
+          <S.Column key={index}>
+            {item.icons === "Verified" ? <Verified /> : null}
+            {item.icons === "Handshake" ? <Handshake /> : null}
+            {item.icons === "GitBranch" ? <GitBranch /> : null}
+            <Heading color="green">{item.title}</Heading>
+            <S.Description>{item.description}</S.Description>
+          </S.Column>
+        ))}
       </S.Content>
     </S.Wrapper>
   );

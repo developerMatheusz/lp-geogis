@@ -1,5 +1,4 @@
-import styled from "styled-components";
-import { css } from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Wrapper = styled.article`
   ${({ theme }) => css`
@@ -24,7 +23,7 @@ export const ImageBox = styled.div`
     #f6f7f8 40%,
     #f6f7f8 100%
   );
-  background-size: 80rem 14rem;
+  background-size: cover;
   animation: placeholderShimmer 1s linear infinite forwards;
   img {
     width: 100%;
@@ -55,15 +54,6 @@ export const Content = styled.div`
   `}
 `;
 
-export const Title = styled.h3`
-  ${({ theme }) => css`
-    font-size: ${theme.font.sizes.medium};
-    line-height: ${theme.font.sizes.medium};
-    font-weight: ${theme.font.bold};
-    color: ${theme.colors.secondary};
-  `}
-`;
-
 export const Info = styled.div`
   max-width: 100%;
   > hr {
@@ -72,6 +62,15 @@ export const Info = styled.div`
     color: white;
     max-width: 100%;
   }
+`;
+
+export const Title = styled.h3`
+  ${({ theme }) => css`
+    font-size: ${theme.font.sizes.medium};
+    line-height: ${theme.font.sizes.medium};
+    font-weight: ${theme.font.bold};
+    color: ${theme.colors.secondary};
+  `}
 `;
 
 export const Description = styled.h4`

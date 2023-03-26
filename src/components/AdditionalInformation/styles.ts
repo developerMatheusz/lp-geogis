@@ -7,9 +7,7 @@ export const Wrapper = styled.div`
     margin-top: ${theme.spacings.xxlarge};
     padding: ${theme.spacings.small};
     padding-top: calc(${theme.spacings.xxlarge} * 1);
-    padding-bottom: ${theme.spacings.xxlarge};
     background-color: rgba(56, 109, 189, 0.38);
-    border-bottom: 0.1rem solid ${theme.colors.white};
   `}
 `;
 
@@ -56,6 +54,6 @@ export const Column = styled.div`
 export const Description = styled.p`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.xlarge};
-    color: ${theme.colors.lightGray};
+    color: ${theme.colors.white};
   `}
 `;

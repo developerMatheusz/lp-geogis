@@ -1,5 +1,4 @@
-import styled from "styled-components";
-import { css } from "styled-components";
+import styled, { css } from "styled-components";
 import media from "styled-media-query";
 
 export const Wrapper = styled.section`
