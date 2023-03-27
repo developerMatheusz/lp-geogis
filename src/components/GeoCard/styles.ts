@@ -7,8 +7,9 @@ export const Wrapper = styled.article`
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background-color: ${theme.colors.lightGray};
+    background-color: ${theme.colors.darkBlue};
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.6) 0.5px 5px 10px;
   `}
 `;
 
@@ -44,7 +45,7 @@ export const Content = styled.div`
   ${({ theme }) => css`
     padding: ${theme.spacings.xsmall};
     border-radius: 5px;
-    background-color: ${theme.colors.darkBlue};
+    background-color: ${theme.colors.blue};
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -69,7 +70,7 @@ export const Title = styled.h3`
     font-size: ${theme.font.sizes.medium};
     line-height: ${theme.font.sizes.medium};
     font-weight: ${theme.font.bold};
-    color: ${theme.colors.secondary};
+    color: ${theme.colors.lightGray};
   `}
 `;
 

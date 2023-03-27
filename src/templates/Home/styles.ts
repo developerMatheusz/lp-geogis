@@ -33,10 +33,10 @@ export const SectionVideo = styled.div`
     text-align: center;
     background: linear-gradient(
       135deg,
-      #cacaca 0%,
-      #cacaca 50%,
-      #8f9a9c 50%,
-      #8f9a9c 100%
+      #0a5483 0%,
+      #0a5483 50%,
+      #02416d 50%,
+      #02416d 100%
     );
   `}
 `;

@@ -36,7 +36,7 @@ export const Description = styled.p`
   ${({ theme }) => css`
     margin-bottom: 1rem;
     font-size: ${theme.font.sizes.xlarge};
-    color: ${theme.colors.white};
+    color: ${theme.colors.gray};
     ${media.lessThan("medium")`
       font-size: ${theme.font.sizes.large};
     `}

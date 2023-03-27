@@ -9,7 +9,7 @@ const Video = () => {
     <S.Wrapper>
       <S.Content>
         <MediaMatch greaterThan="medium">
-          <Heading lineBottom lineColor="secondary" color="secondary">
+          <Heading lineBottom lineColor="secondary" color="white">
             QUER SABER MAIS SOBRE A GEOGIS?
           </Heading>
         </MediaMatch>

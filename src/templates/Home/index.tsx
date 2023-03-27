@@ -52,7 +52,6 @@ const Home = ({
       <S.SectionNews id="last-news">
         <Showcase title="NOSSOS PARCEIROS" news={partners} />
       </S.SectionNews>
-      <hr />
       <S.SectionForm>
         <ContainerForm>
           <FormFeedback />
@@ -61,6 +60,7 @@ const Home = ({
       <AdditionalInformation items={addInformation} />
       <Whatsapp />
       <Redirect />
+      <hr />
       <S.SectionFooter>
         <Container>
           <Footer />
