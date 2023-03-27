@@ -6,13 +6,17 @@ export const Wrapper = styled.header`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: ${theme.spacings.small} 0;
     position: relative;
-    background-color: rgba(1, 9, 55, 0.6);
-    transition: 0.3s;
-    &:hover {
-      background-color: rgba(1, 9, 55, 0.38);
-    }
+    padding: ${theme.spacings.xxsmall};
+    ${media.lessThan("medium")`
+      padding: ${theme.spacings.xsmall};
+    `}
+    background: ${theme.colors.white};
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   `}
 `;
 
@@ -28,8 +32,8 @@ export const MenuNav = styled.div`
 export const MenuLink = styled.a`
   ${({ theme }) => css`
     position: relative;
-    color: ${theme.colors.white};
-    font-size: ${theme.font.sizes.xlarge};
+    color: ${theme.colors.black};
+    font-size: ${theme.font.sizes.large};
     margin: 0.3rem ${theme.spacings.small} 0;
     text-decoration: none;
     text-align: center;
@@ -54,7 +58,7 @@ export const MenuLink = styled.a`
       }
     }
     ${media.lessThan("medium")`
-      font-size: ${theme.font.sizes.xlarge};
+      font-size: ${theme.font.sizes.medium};
     `}
     ${media.between("medium", "large")`
       font-size: ${theme.font.sizes.large};

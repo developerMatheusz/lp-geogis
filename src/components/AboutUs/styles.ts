@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   ${({ theme }) => css`
     position: relative;
     padding: ${theme.spacings.xxlarge};
-    background-color: rgba(56, 109, 189, 0.38);
+    background: #424254;
   `}
 `;
 
@@ -53,11 +53,9 @@ export const ContainerIcon = styled.div`
     }
     &:hover {
       transform: rotate(45deg);
-      border: 0.3rem solid ${theme.colors.secondary};
       > svg {
-        color: ${theme.colors.secondary};
         transform: rotate(-45deg);
-        border: 0.3rem solid ${theme.colors.secondary};
+        border: 0.3rem solid ${theme.colors.white};
       }
     }
   `}

@@ -11,7 +11,7 @@ export type ShowcaseProps = {
 const Showcase = ({ title, news }: ShowcaseProps) => (
   <S.Wrapper>
     {!!title && (
-      <Heading lineBottom lineColor="secondary">
+      <Heading color="white" lineBottom lineColor="secondary">
         {title}
       </Heading>
     )}

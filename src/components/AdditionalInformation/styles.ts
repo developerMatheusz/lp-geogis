@@ -4,10 +4,8 @@ import media from "styled-media-query";
 export const Wrapper = styled.div`
   ${({ theme }) => css`
     position: relative;
-    margin-top: ${theme.spacings.xxlarge};
     padding: ${theme.spacings.small};
-    padding-top: calc(${theme.spacings.xxlarge} * 1);
-    background-color: rgba(56, 109, 189, 0.38);
+    background: ${theme.colors.white};
   `}
 `;
 
@@ -47,6 +45,11 @@ export const Column = styled.div`
     > svg {
       width: 6rem;
       color: ${theme.colors.white};
+      background: linear-gradient(217deg, #00a9d4, #1c3166 70.71%),
+        linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+      border-radius: 100%;
+      padding: 0.5rem;
     }
   `}
 `;
@@ -54,6 +57,6 @@ export const Column = styled.div`
 export const Description = styled.p`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.xlarge};
-    color: ${theme.colors.white};
+    color: ${theme.colors.blue};
   `}
 `;

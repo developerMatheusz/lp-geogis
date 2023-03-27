@@ -1,10 +1,10 @@
 import * as S from "./styles";
 
-export type LineColors = "primary" | "secondary";
+export type LineColors = "primary" | "secondary" | "green";
 
 export type HeadingProps = {
   children: React.ReactNode;
-  color?: "white" | "black" | "green";
+  color?: "white" | "black" | "green" | "blue";
   lineLeft?: boolean;
   lineBottom?: boolean;
   lineColor?: LineColors;

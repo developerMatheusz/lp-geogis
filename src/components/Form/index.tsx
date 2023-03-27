@@ -9,6 +9,7 @@ export const FormWrapper = styled.div`
       justify-content: center;
       align-items: center;
       padding-bottom: 0.2rem;
+      margin-bottom: 20px;
     }
     ${ButtonStyles.Wrapper} {
       margin: ${theme.spacings.xsmall} auto ${theme.spacings.xsmall};

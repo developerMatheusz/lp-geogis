@@ -44,7 +44,7 @@ export const Content = styled.div`
   ${({ theme }) => css`
     padding: ${theme.spacings.xsmall};
     border-radius: 5px;
-    background-color: ${theme.colors.blue};
+    background-color: ${theme.colors.darkBlue};
     display: flex;
     flex-direction: column;
     justify-content: space-between;

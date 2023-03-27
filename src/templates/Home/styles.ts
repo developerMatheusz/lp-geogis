@@ -1,28 +1,38 @@
 import styled, { css } from "styled-components";
 
-export const Wrapper = styled.div`
-  background-image: url(/img/testimonial-bg.png);
-`;
+export const Wrapper = styled.div``;
 
 export const SectionNews = styled.div`
   ${({ theme }) => css`
-    margin-top: ${theme.spacings.xxlarge};
-    padding-top: calc(${theme.spacings.xxlarge} * 1.2);
+    padding-top: ${theme.spacings.xxlarge};
     padding-bottom: ${theme.spacings.xxsmall};
-    background-color: rgba(56, 109, 189, 0.38);
     > div {
       text-align: center;
       margin-bottom: 5rem;
     }
+    background: linear-gradient(
+      135deg,
+      #a6aec1 0%,
+      #a6aec1 50%,
+      #6c788e 50%,
+      #6c788e 100%
+    );
+  `}
+`;
+
+export const SectionVideo = styled.div`
+  ${({ theme }) => css`
+    padding: ${theme.spacings.medium} 0;
+    text-align: center;
+    background: ${theme.colors.white};
   `}
 `;
 
 export const SectionForm = styled.div`
   ${({ theme }) => css`
-    margin-top: ${theme.spacings.xxlarge};
     padding-bottom: ${theme.spacings.xxlarge};
-    padding-top: calc(${theme.spacings.xxlarge} * 0.8);
-    background-color: rgba(56, 109, 189, 0.38);
+    padding-top: ${theme.spacings.xxlarge};
+    background: #424254;
   `}
 `;
 

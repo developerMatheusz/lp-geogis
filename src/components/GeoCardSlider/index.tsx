@@ -6,7 +6,7 @@ import * as S from "./styles";
 
 export type GeoCardSliderProps = {
   items: GeoCardProps[];
-  color?: "white" | "secondary";
+  color?: "white" | "secondary" | "black";
 };
 
 const settings: SliderSettings = {
@@ -50,7 +50,7 @@ const settings: SliderSettings = {
   prevArrow: <ArrowLeft aria-label="previous image" />
 };
 
-const GeoCardSlider = ({ items, color = "white" }: GeoCardSliderProps) => {
+const GeoCardSlider = ({ items, color = "black" }: GeoCardSliderProps) => {
   return (
     <S.Wrapper color={color}>
       <Slider settings={settings}>

@@ -29,11 +29,6 @@ export const Wrapper = styled.section<WrapperProps>`
       height: 2.5rem;
       padding: 0;
       transform: translate(0, -50%);
-      transition: 0.3s;
-      &:hover {
-        color: ${theme.colors.secondary};
-        transition: 0.3s;
-      }
     }
     .slick-prev {
       left: -${theme.spacings.xxlarge};

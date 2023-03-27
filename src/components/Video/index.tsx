@@ -1,12 +1,33 @@
+import Heading from "../Heading";
 import MediaMatch from "../MediaMatch";
+import { Instagram } from "@styled-icons/boxicons-logos/Instagram";
+import * as S from "./styles";
 
 const Video = () => {
   return (
-    <div>
+    <S.Wrapper>
+      <S.Content>
+        <MediaMatch greaterThan="medium">
+          <Heading lineBottom lineColor="secondary" color="blue">
+            QUER SABER MAIS SOBRE A GEOGIS?
+          </Heading>
+        </MediaMatch>
+        <MediaMatch lessThan="medium">
+          <Heading color="blue">QUER SABER MAIS SOBRE A GEOGIS?</Heading>
+        </MediaMatch>
+        <S.Description>Siga-nos no Instagram</S.Description>
+        <a
+          href="https://www.instagram.com/geogisgeotec/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Instagram size={40} />
+        </a>
+      </S.Content>
       <MediaMatch greaterThan="medium">
         <iframe
-          width="790"
-          height="439"
+          width="500"
+          height="276"
           src="https://www.youtube.com/embed/W4wRIVLq_t0"
           title="YouTube video player"
           frameBorder="0"
@@ -25,7 +46,7 @@ const Video = () => {
           allowFullScreen
         ></iframe>
       </MediaMatch>
-    </div>
+    </S.Wrapper>
   );
 };
 

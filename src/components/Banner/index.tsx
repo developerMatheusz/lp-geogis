@@ -8,7 +8,7 @@ export type BannerProps = {
 
 const Banner = ({ img, title, subtitle }: BannerProps) => {
   return (
-    <S.Wrapper>
+    <S.Wrapper id="banner">
       <S.Image src={img} role="img" aria-label={title} />
       <S.Caption>
         <S.Title>{title}</S.Title>

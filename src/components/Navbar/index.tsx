@@ -4,9 +4,9 @@ import * as S from "./styles";
 
 const Navbar = () => {
   return (
-    <S.Wrapper id="navbar">
+    <S.Wrapper>
       <MediaMatch greaterThan="huge">
-        <Logo hideOnMobile size="xxlarge" />
+        <Logo hideOnMobile size="large" />
       </MediaMatch>
       <MediaMatch greaterThan="medium">
         <S.MenuNav>

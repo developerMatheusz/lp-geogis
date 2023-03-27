@@ -2,7 +2,7 @@ import * as S from "./styles";
 
 const Redirect = () => {
   return (
-    <S.Wrapper href="#navbar" rel="noreferrer">
+    <S.Wrapper href="#banner" rel="noreferrer">
       <img
         src="/img/arrow-white.png"
         alt="Flecha que redireciona para o topo da página"

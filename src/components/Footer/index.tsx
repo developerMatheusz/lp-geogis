@@ -6,18 +6,18 @@ import * as S from "./styles";
 const Footer = () => {
   return (
     <S.Wrapper id="contact">
-      <Logo size="normal" />
+      <Logo size="large" />
       <S.Content>
         <S.Column>
-          <Heading color="white" size="small" lineBottom lineColor="secondary">
-            Contato
+          <Heading color="black" size="small" lineBottom lineColor="secondary">
+            CONTATO
           </Heading>
           <a href="mailto:contato@geogis.com.br">contato@geogis.com.br</a>
           <a href="https://wa.me/556540631726">+55 (65) 4063 - 1726</a>
         </S.Column>
         <S.Column>
-          <Heading color="white" size="small" lineBottom lineColor="secondary">
-            Fale com a gente
+          <Heading color="black" size="small" lineBottom lineColor="secondary">
+            FALE COM A GENTE
           </Heading>
           <nav aria-labelledby="social media">
             <a
@@ -33,8 +33,8 @@ const Footer = () => {
           </nav>
         </S.Column>
         <S.Column>
-          <Heading color="white" lineColor="secondary" lineBottom size="small">
-            Links
+          <Heading color="black" lineColor="secondary" lineBottom size="small">
+            LINKS
           </Heading>
           <nav aria-labelledby="footer resources">
             <Link href="/">Início</Link>
@@ -44,8 +44,8 @@ const Footer = () => {
           </nav>
         </S.Column>
         <S.Column aria-labelledby="footer-contact">
-          <Heading color="white" lineColor="secondary" lineBottom size="small">
-            Localização
+          <Heading color="black" lineColor="secondary" lineBottom size="small">
+            LOCALIZAÇÃO
           </Heading>
           <span>Avenida Senador Filinto Muller - </span>
           <span>n° 440, CEP 78045-410 - </span>

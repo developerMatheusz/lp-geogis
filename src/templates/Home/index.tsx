@@ -1,7 +1,7 @@
 import Footer from "@/components/Footer";
 import { Container } from "@/components/Container";
 import { ContainerForm } from "@/components/ContainerForm";
-import Header from "@/components/Navbar";
+import Navbar from "@/components/Navbar";
 import SliderNews from "@/components/SliderNews";
 import AboutUs, {
   NavAboutUsProps,
@@ -40,18 +40,15 @@ const Home = ({
   return (
     <S.Wrapper>
       <VLibra />
-      <Header />
+      <Navbar />
       <SliderNews items={banners} />
       <AboutUs itemsNav={itemsNav} itemsBody={itemsBody} />
       <S.SectionNews id="last-news">
         <Showcase title="INSTAGRAM GEOGIS" news={news} />
       </S.SectionNews>
-      <S.SectionNews id="last-news">
-        <Showcase title="NOSSOS PARCEIROS" news={partners} />
-      </S.SectionNews>
-      <S.SectionNews>
+      <S.SectionVideo>
         <Video />
-      </S.SectionNews>
+      </S.SectionVideo>
       <S.SectionForm>
         <ContainerForm>
           <FormFeedback />
@@ -60,6 +57,9 @@ const Home = ({
       <AdditionalInformation items={addInformation} />
       <Whatsapp />
       <Redirect />
+      <S.SectionNews id="last-news">
+        <Showcase title="NOSSOS PARCEIROS" news={partners} />
+      </S.SectionNews>
       <S.SectionFooter>
         <Container>
           <Footer />
