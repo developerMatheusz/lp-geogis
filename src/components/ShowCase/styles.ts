@@ -7,14 +7,11 @@ import * as GeoCardStyles from "../GeoCardSlider/styles";
 export const Wrapper = styled(Container).attrs({ as: "section" })`
   ${({ theme }) => css`
     ${HeadingStyles.Wrapper},
-    ${GeoCardStyles.Wrapper} {
-      margin-bottom: ${theme.spacings.medium};
-    }
+    ${GeoCardStyles.Wrapper}
     ${GeoCardStyles.Wrapper} {
       ${media.lessThan("huge")`
         margin-right: calc(-${theme.grid.gutter} / 2);
       `}
     }
-    margin-bottom: calc(${theme.spacings.large} * 2);
   `}
 `;

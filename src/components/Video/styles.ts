@@ -13,25 +13,32 @@ export const Wrapper = styled.div`
 `;
 
 export const Content = styled.div`
-  margin-right: 5rem;
-  text-align: left;
-  > a {
-    text-decoration: none;
-    color: black;
-    margin-bottom: 1rem;
-  }
-  ${media.lessThan("medium")`
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    margin-right: 0rem;
-    text-align: center;
+  ${({ theme }) => css`
+    margin-right: 5rem;
+    text-align: left;
+    > a {
+      text-decoration: none;
+      color: ${theme.colors.black};
+      margin: 0.3rem;
+    }
+    ${media.lessThan("medium")`
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      margin-right: 0rem;
+      text-align: center;
+      padding: 0.3rem;
+    `}
   `}
 `;
 
 export const Description = styled.p`
   ${({ theme }) => css`
+    margin-bottom: 1rem;
     font-size: ${theme.font.sizes.xlarge};
-    color: ${theme.colors.gray};
+    color: ${theme.colors.white};
+    ${media.lessThan("medium")`
+      font-size: ${theme.font.sizes.large};
+    `}
   `}
 `;

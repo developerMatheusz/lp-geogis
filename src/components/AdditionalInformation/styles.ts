@@ -45,7 +45,11 @@ export const Column = styled.div`
     > svg {
       width: 6rem;
       color: ${theme.colors.white};
-      background: linear-gradient(217deg, #00a9d4, #1c3166 70.71%),
+      background: linear-gradient(
+          217deg,
+          ${theme.colors.blue},
+          ${theme.colors.darkBlue} 70.71%
+        ),
         linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
         linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
       border-radius: 100%;
@@ -57,6 +61,6 @@ export const Column = styled.div`
 export const Description = styled.p`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.xlarge};
-    color: ${theme.colors.blue};
+    color: ${theme.colors.secondary};
   `}
 `;

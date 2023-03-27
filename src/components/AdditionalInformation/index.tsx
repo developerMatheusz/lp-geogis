@@ -25,7 +25,7 @@ const AdditionalInformation = ({ items }: AdditionalInformationProps) => {
             {item.icons === "Verified" ? <Verified /> : null}
             {item.icons === "Handshake" ? <Handshake /> : null}
             {item.icons === "GitBranch" ? <GitBranch /> : null}
-            <Heading color="blue">{item.title}</Heading>
+            <Heading color="secondary">{item.title}</Heading>
             <S.Description>{item.description}</S.Description>
           </S.Column>
         ))}

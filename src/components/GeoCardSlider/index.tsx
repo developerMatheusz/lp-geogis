@@ -50,7 +50,7 @@ const settings: SliderSettings = {
   prevArrow: <ArrowLeft aria-label="previous image" />
 };
 
-const GeoCardSlider = ({ items, color = "black" }: GeoCardSliderProps) => {
+const GeoCardSlider = ({ items, color = "secondary" }: GeoCardSliderProps) => {
   return (
     <S.Wrapper color={color}>
       <Slider settings={settings}>

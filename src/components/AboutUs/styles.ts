@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   ${({ theme }) => css`
     position: relative;
     padding: ${theme.spacings.xxlarge};
-    background: #424254;
+    background: ${theme.colors.white};
   `}
 `;
 
@@ -33,7 +33,7 @@ export const Description = styled.p`
   ${({ theme }) => css`
     margin-top: 1rem;
     font-size: ${theme.font.sizes.medium};
-    color: ${theme.colors.white};
+    color: ${theme.colors.gray};
     ${media.greaterThan("medium")`
       font-size: ${theme.font.sizes.large};
     `}
@@ -44,18 +44,18 @@ export const ContainerIcon = styled.div`
   ${({ theme }) => css`
     margin-bottom: 1rem;
     max-width: 6.5rem;
-    border: 0.3rem solid ${theme.colors.white};
+    border: 0.3rem solid ${theme.colors.secondary};
     transition: 0.4s;
     > svg {
       padding: 0.8rem;
       width: 6rem;
-      color: ${theme.colors.white};
+      color: ${theme.colors.secondary};
     }
     &:hover {
       transform: rotate(45deg);
       > svg {
         transform: rotate(-45deg);
-        border: 0.3rem solid ${theme.colors.white};
+        border: 0.3rem solid ${theme.colors.secondary};
       }
     }
   `}

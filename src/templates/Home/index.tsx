@@ -43,12 +43,16 @@ const Home = ({
       <Navbar />
       <SliderNews items={banners} />
       <AboutUs itemsNav={itemsNav} itemsBody={itemsBody} />
-      <S.SectionNews id="last-news">
-        <Showcase title="INSTAGRAM GEOGIS" news={news} />
-      </S.SectionNews>
       <S.SectionVideo>
         <Video />
       </S.SectionVideo>
+      <S.SectionNews id="last-news">
+        <Showcase title="INSTAGRAM GEOGIS" news={news} />
+      </S.SectionNews>
+      <S.SectionNews id="last-news">
+        <Showcase title="NOSSOS PARCEIROS" news={partners} />
+      </S.SectionNews>
+      <hr />
       <S.SectionForm>
         <ContainerForm>
           <FormFeedback />
@@ -57,9 +61,6 @@ const Home = ({
       <AdditionalInformation items={addInformation} />
       <Whatsapp />
       <Redirect />
-      <S.SectionNews id="last-news">
-        <Showcase title="NOSSOS PARCEIROS" news={partners} />
-      </S.SectionNews>
       <S.SectionFooter>
         <Container>
           <Footer />

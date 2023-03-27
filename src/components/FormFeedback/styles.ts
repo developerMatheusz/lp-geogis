@@ -43,11 +43,12 @@ export const Input = styled.input`
 
 export const Message = styled.p`
   ${({ theme }) => css`
-    color: ${theme.colors.white};
+    color: ${theme.colors.black};
     text-align: center;
     font-size: ${theme.font.sizes.large};
     ${media.lessThan("medium")`
       font-size: ${theme.font.sizes.medium};
     `}
+    margin-bottom: 4rem;
   `}
 `;

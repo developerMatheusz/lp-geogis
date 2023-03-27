@@ -34,7 +34,7 @@ const AboutUs = ({ itemsNav, itemsBody }: AboutUsProps) => {
     <S.Wrapper id="about-us">
       <S.Content>
         <S.Column>
-          <Heading color="white" lineBottom lineColor="secondary">
+          <Heading color="secondary" lineBottom lineColor="secondary">
             {itemsNav.title}
           </Heading>
           <S.Description>{itemsNav.description}</S.Description>
@@ -48,7 +48,7 @@ const AboutUs = ({ itemsNav, itemsBody }: AboutUsProps) => {
               {itemBody.icons === "House" ? <House /> : null}
               {itemBody.icons === "DeveloperBoard" ? <DeveloperBoard /> : null}
             </S.ContainerIcon>
-            <Heading color="white">{itemBody.title}</Heading>
+            <Heading color="secondary">{itemBody.title}</Heading>
             <S.Description>{itemBody.description}</S.Description>
           </S.Column>
         ))}

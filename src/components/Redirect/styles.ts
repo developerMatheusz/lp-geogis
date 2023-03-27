@@ -12,7 +12,7 @@ export const Wrapper = styled.a`
       border-radius: 100%;
       width: 5rem;
       &:hover {
-        background: ${theme.colors.darkBlue};
+        background: ${theme.colors.blue};
       }
     }
   `}

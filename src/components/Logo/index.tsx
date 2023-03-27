@@ -1,14 +1,20 @@
 import * as S from "./styles";
 
 export type LogoProps = {
-  size?: "normal" | "large" | "xxlarge";
+  size?: "normal" | "large" | "xxlarge" | "small";
   hideOnMobile?: boolean;
+  withText?: boolean;
 };
 
-const Logo = ({ size = "large", hideOnMobile }: LogoProps) => {
+const Logo = ({ size = "large", hideOnMobile, withText = true }: LogoProps) => {
   return (
     <S.Wrapper size={size} hideOnMobile={hideOnMobile}>
-      <img src="/img/logo.png" alt="Logomarca da empresa GeoGIS" />
+      {withText && (
+        <img src="/img/logo.png" alt="Logomarca da empresa GeoGIS" />
+      )}
+      {!withText && (
+        <img src="/img/logo_no_text.png" alt="Logomarca da empresa GeoGIS" />
+      )}
     </S.Wrapper>
   );
 };
