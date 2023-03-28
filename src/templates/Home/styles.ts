@@ -50,5 +50,9 @@ export const SectionForm = styled.div`
 `;
 
 export const SectionFooter = styled.footer`
-  margin-top: 3rem;
+  ${({ theme }) => css`
+    padding-top: 2rem;
+    margin-top: 3rem;
+    background: ${theme.colors.lightGray};
+  `}
 `;

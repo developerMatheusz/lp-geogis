@@ -14,7 +14,7 @@ const Video = () => {
           </Heading>
         </MediaMatch>
         <MediaMatch lessThan="medium">
-          <Heading color="blue">QUER SABER MAIS SOBRE A GEOGIS?</Heading>
+          <Heading color="white">QUER SABER MAIS SOBRE A GEOGIS?</Heading>
         </MediaMatch>
         <S.Description>Siga-nos em nossas redes sociais</S.Description>
         <a

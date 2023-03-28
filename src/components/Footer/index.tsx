@@ -6,14 +6,16 @@ import * as S from "./styles";
 const Footer = () => {
   return (
     <S.Wrapper id="contact">
-      <Logo size="large" />
+      <Logo size="small" />
       <S.Content>
         <S.Column>
           <Heading color="black" size="small" lineBottom lineColor="secondary">
             CONTATO
           </Heading>
           <a href="mailto:contato@geogis.com.br">contato@geogis.com.br</a>
-          <a href="https://wa.me/556540631726">+55 (65) 4063 - 1726</a>
+          <a href="https://wa.me/556540631726" target="_blank" rel="noreferrer">
+            +55 (65) 4063 - 1726
+          </a>
         </S.Column>
         <S.Column>
           <Heading color="black" size="small" lineBottom lineColor="secondary">

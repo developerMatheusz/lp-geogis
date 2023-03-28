@@ -5,7 +5,14 @@ export const Wrapper = styled.div`
   ${({ theme }) => css`
     position: relative;
     padding: ${theme.spacings.small};
-    background: ${theme.colors.white};
+    background: linear-gradient(
+      135deg,
+      #0f684b 0%,
+      #0f684b 50%,
+      #03484c 50%,
+      #03484c 100%
+    );
+    margin-top: 6rem;
   `}
 `;
 
@@ -47,7 +54,7 @@ export const Column = styled.div`
       color: ${theme.colors.white};
       background: linear-gradient(
           217deg,
-          ${theme.colors.blue},
+          ${theme.colors.secondary},
           ${theme.colors.darkBlue} 70.71%
         ),
         linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
@@ -61,6 +68,6 @@ export const Column = styled.div`
 export const Description = styled.p`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.xlarge};
-    color: ${theme.colors.secondary};
+    color: ${theme.colors.white};
   `}
 `;

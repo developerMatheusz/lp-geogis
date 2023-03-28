@@ -16,6 +16,7 @@ import Whatsapp from "@/components/Whatsapp";
 import Redirect from "@/components/Redirect";
 import VLibra from "@/components/VLibra";
 import Video from "@/components/Video";
+import GeoLocalization from "@/components/GeoLocalization";
 import { BannerProps } from "@/components/Banner";
 import { GeoCardProps } from "@/components/GeoCard";
 import * as S from "./styles";
@@ -52,15 +53,15 @@ const Home = ({
       <S.SectionNews id="last-news">
         <Showcase title="NOSSOS PARCEIROS" news={partners} />
       </S.SectionNews>
+      <AdditionalInformation items={addInformation} />
       <S.SectionForm>
         <ContainerForm>
           <FormFeedback />
         </ContainerForm>
       </S.SectionForm>
-      <AdditionalInformation items={addInformation} />
+      <GeoLocalization />
       <Whatsapp />
       <Redirect />
-      <hr />
       <S.SectionFooter>
         <Container>
           <Footer />

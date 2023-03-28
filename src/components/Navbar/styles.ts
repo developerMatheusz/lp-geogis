@@ -58,7 +58,8 @@ export const MenuLink = styled.a`
       }
     }
     ${media.lessThan("medium")`
-      font-size: ${theme.font.sizes.medium};
+      font-size: ${theme.font.sizes.small};
+      margin: 1.5rem;
     `}
     ${media.between("medium", "large")`
       font-size: ${theme.font.sizes.large};

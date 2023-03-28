@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <S.Wrapper>
       <MediaMatch greaterThan="huge">
-        <Logo hideOnMobile size="large" />
+        <Logo hideOnMobile size="normal" />
       </MediaMatch>
       <MediaMatch greaterThan="medium">
         <S.MenuNav>
@@ -21,6 +21,7 @@ const Navbar = () => {
       </MediaMatch>
       <MediaMatch lessThan="medium">
         <S.MenuLink href="/">INÍCIO</S.MenuLink>
+        <S.MenuLink href="#about-us">SOBRE NÓS</S.MenuLink>
         <S.MenuLink href="https://ecoletasocial.com.br/" target="_blank">
           ECOLETASOCIAL
         </S.MenuLink>

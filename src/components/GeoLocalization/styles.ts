@@ -2,16 +2,27 @@ import styled, { css } from "styled-components";
 import media from "styled-media-query";
 
 export const Wrapper = styled.div`
-  display: flex;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  justify-content: center;
-  ${media.lessThan("medium")`
+  ${({ theme }) => css`
+    padding: ${theme.spacings.medium} 0;
+    text-align: center;
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    ${media.lessThan("medium")`
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     > div {
       margin-top: 1rem;
     }
+  `}
+    background: linear-gradient(
+      135deg,
+      #0a5483 0%,
+      #0a5483 50%,
+      #02416d 50%,
+      #02416d 100%
+    );
   `}
 `;
 

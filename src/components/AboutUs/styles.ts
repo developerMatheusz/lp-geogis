@@ -26,6 +26,15 @@ export const Content = styled.div`
 export const Column = styled.div`
   ${({ theme }) => css`
     padding: ${theme.spacings.xsmall};
+    &:hover {
+      > ${ContainerIcon} {
+        transform: rotate(45deg);
+        > svg {
+          transform: rotate(-45deg);
+          border: 0.3rem solid ${theme.colors.secondary};
+        }
+      }
+    }
   `}
 `;
 
@@ -50,13 +59,6 @@ export const ContainerIcon = styled.div`
       padding: 0.8rem;
       width: 6rem;
       color: ${theme.colors.secondary};
-    }
-    &:hover {
-      transform: rotate(45deg);
-      > svg {
-        transform: rotate(-45deg);
-        border: 0.3rem solid ${theme.colors.secondary};
-      }
     }
   `}
 `;

@@ -10,7 +10,7 @@ const FormFeedback = () => {
 
   return (
     <FormWrapper>
-      <Logo size="small" withText={false} />
+      <Logo size="large" />
       <form>
         <S.InputWrapper>
           <S.Icon>

@@ -1,5 +1,5 @@
 export default {
   title: "VOCÊ JÁ SE QUESTIONOU O QUE É GEOTECNOLOGIA?",
   description:
-    "Também conhecidas como geoprocessamento, as geotecnologias são o conjunto de tecnologias para coleta, processamento, análise e disponibilização de informação com referência geográfica. As geotecnologias são compostas por soluções em hardware, software e peopleware que juntos se constituem em poderosas ferramentas para a tomada de decisões. Dentre as geotecnologias estão os GIS - Sistemas de Informação Geográfica, Cartografia Digital, Sensoriamento Remoto por Satélites, Sistema de Posicionamento Global (ex. GPS), Aerofotogrametria, Geodésia e Topografia Clássica, dentre outros. Com a evolução da tecnologia de geoprocessamento e de softwares gráficos vários termos surgiram para as muitas especialidades. Essa tecnologia pode ser usada em diversas áreas, como: Gestão Municipal, Meio Ambiente, Agronegócios, serviços públicos de saneamento, energia elétrica e telecomunicações e, é claro, em Educação como exemplificaremos."
+    "Também conhecidas como geoprocessamento, as geotecnologias são o conjunto de tecnologias para coleta, processamento, análise e disponibilização de informação com referência geográfica. As geotecnologias são compostas por soluções em hardware, software e peopleware que juntos se constituem em poderosas ferramentas para a tomada de decisões."
 };
