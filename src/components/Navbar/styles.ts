@@ -26,6 +26,9 @@ export const MenuNav = styled.div`
       margin-left: ${theme.spacings.small};
     `}
     margin-left: ${theme.spacings.small};
+    .dropdown {
+      color: red;
+    }
   `}
 `;
 
@@ -58,8 +61,8 @@ export const MenuLink = styled.a`
       }
     }
     ${media.lessThan("medium")`
-      font-size: ${theme.font.sizes.small};
-      margin: 1.2rem;
+      font-size: ${theme.font.sizes.xsmall};
+      margin: 0.6rem;
     `}
     ${media.between("medium", "large")`
       font-size: ${theme.font.sizes.large};
