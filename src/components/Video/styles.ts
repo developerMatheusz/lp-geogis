@@ -20,10 +20,10 @@ export const Content = styled.div`
     margin-right: 5rem;
     text-align: left;
     > a {
-      text-decoration: none;
-      color: ${theme.colors.black};
-      margin: 0.3rem;
+      color: ${theme.colors.gray};
+      margin-right: 0.3rem;
     }
+
     ${media.lessThan("medium")`
       display: block;
       align-items: center;
@@ -31,6 +31,9 @@ export const Content = styled.div`
       margin-right: 0rem;
       text-align: center;
       padding: 0.3rem;
+      > a {
+        font-size: ${theme.font.sizes.small};
+      }
     `}
   `}
 `;
@@ -39,9 +42,9 @@ export const Description = styled.p`
   ${({ theme }) => css`
     margin-bottom: 1rem;
     font-size: ${theme.font.sizes.xlarge};
-    color: ${theme.colors.gray};
+    color: ${theme.colors.white};
     ${media.lessThan("medium")`
-      font-size: ${theme.font.sizes.large};
+      font-size: ${theme.font.sizes.small};
     `}
   `}
 `;

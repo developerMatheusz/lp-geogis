@@ -40,9 +40,11 @@ const Footer = () => {
           </Heading>
           <nav aria-labelledby="footer resources">
             <Link href="/">Início</Link>
-            <Link href="/about-us">Sobre nós</Link>
-            <Link href="/services">Últimas notícias</Link>
-            <Link href="/ecoleta">Ecoletasocial</Link>
+            <Link href="#about-us">Quem somos</Link>
+            <Link href="#last-news">Últimas notícias</Link>
+            <Link href="https://ecoletasocial.com.br/" target="_blank">
+              Ecoletasocial
+            </Link>
           </nav>
         </S.Column>
         <S.Column aria-labelledby="footer-contact">

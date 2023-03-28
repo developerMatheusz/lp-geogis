@@ -1,7 +1,4 @@
-import Footer from "@/components/Footer";
-import { Container } from "@/components/Container";
 import { ContainerForm } from "@/components/ContainerForm";
-import Navbar from "@/components/Navbar";
 import SliderNews from "@/components/SliderNews";
 import AboutUs, {
   NavAboutUsProps,
@@ -12,11 +9,9 @@ import FormFeedback from "@/components/FormFeedback";
 import AdditionalInformation, {
   ListInformationsProps
 } from "@/components/AdditionalInformation";
-import Whatsapp from "@/components/Whatsapp";
-import Redirect from "@/components/Redirect";
-import VLibra from "@/components/VLibra";
 import Video from "@/components/Video";
 import GeoLocalization from "@/components/GeoLocalization";
+import Base from "../Base";
 import { BannerProps } from "@/components/Banner";
 import { GeoCardProps } from "@/components/GeoCard";
 import * as S from "./styles";
@@ -39,9 +34,7 @@ const Home = ({
   addInformation
 }: HomeTemplateProps) => {
   return (
-    <S.Wrapper>
-      <VLibra />
-      <Navbar />
+    <Base>
       <SliderNews items={banners} />
       <AboutUs itemsNav={itemsNav} itemsBody={itemsBody} />
       <S.SectionVideo>
@@ -60,14 +53,7 @@ const Home = ({
         </ContainerForm>
       </S.SectionForm>
       <GeoLocalization />
-      <Whatsapp />
-      <Redirect />
-      <S.SectionFooter>
-        <Container>
-          <Footer />
-        </Container>
-      </S.SectionFooter>
-    </S.Wrapper>
+    </Base>
   );
 };
 

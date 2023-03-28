@@ -59,7 +59,7 @@ export const MenuLink = styled.a`
     }
     ${media.lessThan("medium")`
       font-size: ${theme.font.sizes.small};
-      margin: 1.5rem;
+      margin: 1.2rem;
     `}
     ${media.between("medium", "large")`
       font-size: ${theme.font.sizes.large};

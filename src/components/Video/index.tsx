@@ -3,6 +3,7 @@ import MediaMatch from "../MediaMatch";
 import { InstagramWithCircle as Instagram } from "@styled-icons/entypo-social/InstagramWithCircle";
 import { YoutubeWithCircle as Youtube } from "@styled-icons/entypo-social/YoutubeWithCircle";
 import * as S from "./styles";
+import Link from "next/link";
 
 const Video = () => {
   return (
@@ -16,6 +17,7 @@ const Video = () => {
         <MediaMatch lessThan="medium">
           <Heading color="white">QUER SABER MAIS SOBRE A GEOGIS?</Heading>
         </MediaMatch>
+        <Link href="/governance">CONHEÇA NOSSO MODELO DE GOVERNANÇA</Link>
         <S.Description>Siga-nos em nossas redes sociais</S.Description>
         <a
           href="https://www.instagram.com/geogisgeotec/"

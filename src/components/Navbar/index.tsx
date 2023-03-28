@@ -11,7 +11,7 @@ const Navbar = () => {
       <MediaMatch greaterThan="medium">
         <S.MenuNav>
           <S.MenuLink href="/">INÍCIO</S.MenuLink>
-          <S.MenuLink href="#about-us">SOBRE NÓS</S.MenuLink>
+          <S.MenuLink href="#about-us">QUEM SOMOS</S.MenuLink>
           <S.MenuLink href="#last-news">ÚLTIMAS NOTÍCIAS</S.MenuLink>
           <S.MenuLink href="#contact">CONTATO</S.MenuLink>
           <S.MenuLink href="https://ecoletasocial.com.br/" target="_blank">
@@ -21,7 +21,7 @@ const Navbar = () => {
       </MediaMatch>
       <MediaMatch lessThan="medium">
         <S.MenuLink href="/">INÍCIO</S.MenuLink>
-        <S.MenuLink href="#about-us">SOBRE NÓS</S.MenuLink>
+        <S.MenuLink href="#about-us">QUEM SOMOS</S.MenuLink>
         <S.MenuLink href="https://ecoletasocial.com.br/" target="_blank">
           ECOLETASOCIAL
         </S.MenuLink>
