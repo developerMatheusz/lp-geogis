@@ -54,9 +54,9 @@ const Footer = () => {
           <Heading color="black" lineColor="secondary" lineBottom size="small">
             LOCALIZAÇÃO
           </Heading>
-          <span>Avenida Senador Filinto Muller - </span>
-          <span>n° 440, CEP 78045-410 - </span>
-          <span>bairro Goiabeiras, Cuiabá/MT</span>
+          <span>Avenida Senador Filinto Muller, n° 440.</span>
+          <span>Bairro Goiabeiras, Cuiabá/MT.</span>
+          <span>CEP 78045-410.</span>
         </S.Column>
         <S.Copyright>
           GeoGIS 2023 &copy; Todos os direitos reservados.

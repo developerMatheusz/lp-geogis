@@ -25,9 +25,10 @@ const GeogisGovernance = () => {
         <S.Description>
           O modelo de governança é a forma como a empresa organiza seus
           processos mais importantes, definindo a dinâmica, atribuições e
-          composição de cada esfera de avaliação de resultados. A GeoGIS é
-          organizada da seguinte forma:
+          composição de cada esfera de avaliação de resultados. Sendo assim, a
+          GeoGIS é organizada da seguinte forma:
         </S.Description>
+        <img src="/img/model/model1.png" />
       </S.Content>
     </Base>
   );
