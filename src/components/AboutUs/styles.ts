@@ -18,8 +18,8 @@ export const Wrapper = styled.div`
       width: 100%;
       height: 100%;
       z-index: 1;
-      opacity: 0.2;
-      background-image: url(/img/bg_green_about_us.jpg);
+      opacity: 0.1;
+      background-image: url(/img/geogis/bg_green_about_us.jpg);
       background-repeat: no-repeat;
       background-position: 50% 0;
       background-size: cover;
@@ -64,7 +64,7 @@ export const Column = styled.div`
 export const Description = styled.p`
   ${({ theme }) => css`
     margin-top: 1rem;
-    font-size: ${theme.font.sizes.medium};
+    font-size: ${theme.font.sizes.small};
     color: ${theme.colors.darkGray};
     ${media.greaterThan("medium")`
       font-size: ${theme.font.sizes.large};

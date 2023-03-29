@@ -39,9 +39,12 @@ const Footer = () => {
             LINKS
           </Heading>
           <nav aria-labelledby="footer resources">
-            <Link href="/">Início</Link>
-            <Link href="#about-us">Quem somos</Link>
-            <Link href="#last-news">Últimas notícias</Link>
+            <Link href="/" target="_self">
+              Início
+            </Link>
+            <Link href="/governance" target="_self">
+              Modelo de governança
+            </Link>
             <Link href="https://ecoletasocial.com.br/" target="_blank">
               Ecoletasocial
             </Link>

@@ -21,7 +21,7 @@ export const Content = styled.div`
     text-align: left;
     > a {
       color: ${theme.colors.gray};
-      margin-right: 0.3rem;
+      margin-right: 0.6rem;
     }
 
     ${media.lessThan("medium")`

@@ -9,7 +9,11 @@ const App = ({ Component, pageProps }: AppProps) => {
     <ThemeProvider theme={theme}>
       <Head>
         <title>GeoGIS Geotecnologia</title>
-        <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
+        <link
+          rel="shortcut icon"
+          href="/img/geogis/favicon.png"
+          type="image/x-icon"
+        />
       </Head>
       <Component {...pageProps} />
       <GlobalStyles />

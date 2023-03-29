@@ -7,10 +7,10 @@ export const Wrapper = styled.div`
     padding: ${theme.spacings.small};
     background: linear-gradient(
       135deg,
-      #0f684b 0%,
+      #3b8952 0%,
+      #3b8952 50%,
       #0f684b 50%,
-      #03484c 50%,
-      #03484c 100%
+      #0f684b 100%
     );
   `}
 `;
@@ -23,7 +23,7 @@ export const Content = styled.div`
     text-align: center;
     grid-template-columns: repeat(1, 1fr);
     gap: ${theme.grid.gutter};
-    margin-top: ${theme.spacings.xxsmall};
+    margin-top: ${theme.spacings.large};
     margin-bottom: ${theme.spacings.large};
     ${media.greaterThan("medium")`
       grid-template-columns: repeat(3, 1fr);

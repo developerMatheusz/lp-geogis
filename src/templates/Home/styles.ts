@@ -43,7 +43,7 @@ export const Background = styled.div`
       height: 100%;
       z-index: 1;
       opacity: 0.2;
-      background-image: url(/img/bg_green_section.jpg);
+      background-image: url(/img/geogis/bg_green_section.jpg);
       background-repeat: no-repeat;
       background-position: 50% 0;
       background-size: cover;
@@ -70,8 +70,8 @@ export const SectionForm = styled.div`
       width: 100%;
       height: 100%;
       z-index: 1;
-      opacity: 0.2;
-      background-image: url(/img/bg_green_feedback.jpg);
+      opacity: 0.1;
+      background-image: url(/img/geogis/bg_green_feedback.jpg);
       background-repeat: no-repeat;
       background-position: 50% 0;
       background-size: cover;

@@ -4,12 +4,13 @@ import * as ButtonStyles from "../Button/styles";
 
 export const FormWrapper = styled.div`
   ${({ theme }) => css`
+    margin-top: 6rem;
     > div {
       display: flex;
       justify-content: center;
       align-items: center;
       padding-bottom: 0.2rem;
-      margin-bottom: 20px;
+      margin-bottom: 2rem;
     }
     ${ButtonStyles.Wrapper} {
       margin: ${theme.spacings.xsmall} auto ${theme.spacings.xsmall};

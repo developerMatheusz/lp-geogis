@@ -18,10 +18,10 @@ export const Wrapper = styled.div`
   `}
     background: linear-gradient(
       135deg,
-      #0a5483 0%,
-      #0a5483 50%,
-      #02416d 50%,
-      #02416d 100%
+      #45484b 0%,
+      #45484b 50%,
+      #36393b 50%,
+      #36393b 100%
     );
   `}
 `;

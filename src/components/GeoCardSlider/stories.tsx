@@ -14,11 +14,11 @@ const Template: ComponentStory<typeof GeoCardSlider> = (args) => (
 );
 
 export const WithNews = Template.bind({});
-export const WithPartners = Template.bind({});
+export const WithMedia = Template.bind({});
 
 WithNews.args = {
   items: newsMock
 };
-WithPartners.args = {
+WithMedia.args = {
   items: partnersMock
 };

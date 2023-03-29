@@ -15,7 +15,8 @@ const Template: ComponentStory<typeof GeoCard> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  title: "Rota do Oeste",
-  img: "/img/logo/logo3.png",
-  description: "BR-163, a Rodovia da integração."
+  title: "INTERMAT",
+  img: "/img/media/img1.jpg",
+  description:
+    "Intermat segue com atendimento para regularizar imóveis em Cuiabá e Várzea Grande"
 };

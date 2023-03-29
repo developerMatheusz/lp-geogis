@@ -2,6 +2,7 @@ import Heading from "../Heading";
 import MediaMatch from "../MediaMatch";
 import { InstagramWithCircle as Instagram } from "@styled-icons/entypo-social/InstagramWithCircle";
 import { YoutubeWithCircle as Youtube } from "@styled-icons/entypo-social/YoutubeWithCircle";
+import { FacebookWithCircle as Facebook } from "@styled-icons/entypo-social/FacebookWithCircle";
 import * as S from "./styles";
 import Link from "next/link";
 
@@ -32,6 +33,13 @@ const Video = () => {
           rel="noreferrer"
         >
           <Youtube color="white" size={40} />
+        </a>
+        <a
+          href="https://www.facebook.com/GeoGISGeotecnologia"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Facebook color="white" size={40} />
         </a>
       </S.Content>
       <MediaMatch greaterThan="medium">

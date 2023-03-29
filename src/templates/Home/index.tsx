@@ -41,11 +41,11 @@ const Home = ({
         <Video />
       </S.SectionVideo>
       <S.Background>
-        <S.SectionNews id="last-news">
+        <S.SectionNews>
           <Showcase title="INSTAGRAM GEOGIS" news={news} />
         </S.SectionNews>
-        <S.SectionNews id="last-news">
-          <Showcase title="NOSSOS PARCEIROS" news={partners} />
+        <S.SectionNews>
+          <Showcase title="GEOGIS NA MÍDIA" news={partners} />
         </S.SectionNews>
       </S.Background>
       <AdditionalInformation items={addInformation} />

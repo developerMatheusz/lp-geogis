@@ -3,6 +3,9 @@ import media from "styled-media-query";
 import { LogoProps } from ".";
 
 const wrapperModifiers = {
+  xsmall: () => css`
+    width: 5rem;
+  `,
   small: () => css`
     width: 10rem;
   `,

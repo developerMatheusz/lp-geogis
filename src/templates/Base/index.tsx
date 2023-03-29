@@ -1,7 +1,6 @@
 import { Container } from "@/components/Container";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import Redirect from "@/components/Redirect";
 import VLibra from "@/components/VLibra";
 import Whatsapp from "@/components/Whatsapp";
 import * as S from "./styles";
@@ -22,7 +21,6 @@ const Base = ({ children }: BaseTemplateProps) => {
         </Container>
       </S.SectionFooter>
       <Whatsapp />
-      <Redirect />
     </S.Wrapper>
   );
 };
