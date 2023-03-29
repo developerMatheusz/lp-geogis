@@ -47,7 +47,7 @@ export const Message = styled.p`
     text-align: center;
     font-size: ${theme.font.sizes.large};
     ${media.lessThan("medium")`
-      font-size: ${theme.font.sizes.medium};
+      font-size: ${theme.font.sizes.small};
     `}
     margin-bottom: 4rem;
   `}

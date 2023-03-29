@@ -40,12 +40,14 @@ const Home = ({
       <S.SectionVideo>
         <Video />
       </S.SectionVideo>
-      <S.SectionNews id="last-news">
-        <Showcase title="INSTAGRAM GEOGIS" news={news} />
-      </S.SectionNews>
-      <S.SectionNews id="last-news">
-        <Showcase title="NOSSOS PARCEIROS" news={partners} />
-      </S.SectionNews>
+      <S.Background>
+        <S.SectionNews id="last-news">
+          <Showcase title="INSTAGRAM GEOGIS" news={news} />
+        </S.SectionNews>
+        <S.SectionNews id="last-news">
+          <Showcase title="NOSSOS PARCEIROS" news={partners} />
+        </S.SectionNews>
+      </S.Background>
       <AdditionalInformation items={addInformation} />
       <S.SectionForm>
         <ContainerForm>

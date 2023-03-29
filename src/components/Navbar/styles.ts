@@ -15,7 +15,7 @@ export const Wrapper = styled.header`
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 3;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   `}
 `;

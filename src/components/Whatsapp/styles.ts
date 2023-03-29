@@ -7,4 +7,5 @@ export const Wrapper = styled.a`
   > img {
     width: 5rem;
   }
+  z-index: 3;
 `;

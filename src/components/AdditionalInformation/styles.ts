@@ -12,7 +12,6 @@ export const Wrapper = styled.div`
       #03484c 50%,
       #03484c 100%
     );
-    margin-top: 6rem;
   `}
 `;
 

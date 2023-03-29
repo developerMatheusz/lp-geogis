@@ -14,6 +14,8 @@ export const FormWrapper = styled.div`
     ${ButtonStyles.Wrapper} {
       margin: ${theme.spacings.xsmall} auto ${theme.spacings.xsmall};
     }
+    position: relative;
+    z-index: 2;
   `}
 `;
 

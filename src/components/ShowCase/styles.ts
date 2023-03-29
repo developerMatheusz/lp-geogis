@@ -13,5 +13,6 @@ export const Wrapper = styled(Container).attrs({ as: "section" })`
         margin-right: calc(-${theme.grid.gutter} / 2);
       `}
     }
+    margin-bottom: 4.5rem;
   `}
 `;

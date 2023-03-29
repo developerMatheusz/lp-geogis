@@ -5,7 +5,28 @@ export const Wrapper = styled.div`
   ${({ theme }) => css`
     position: relative;
     padding: ${theme.spacings.xxlarge};
-    background: ${theme.colors.white};
+    ${media.lessThan("medium")`
+      background: ${theme.colors.white};
+    `}
+    overflow: hidden;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0.2;
+      background-image: url(/img/bg_green_about_us.jpg);
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-size: cover;
+      ${media.lessThan("medium")`
+        background: ${theme.colors.white};
+      `}
+    }
   `}
 `;
 
@@ -20,6 +41,8 @@ export const Content = styled.div`
     ${media.between("medium", "large")`
       grid-template-columns: repeat(2, 1fr);
     `}
+    position: relative;
+    z-index: 2;
   `}
 `;
 
@@ -42,7 +65,7 @@ export const Description = styled.p`
   ${({ theme }) => css`
     margin-top: 1rem;
     font-size: ${theme.font.sizes.medium};
-    color: ${theme.colors.gray};
+    color: ${theme.colors.darkGray};
     ${media.greaterThan("medium")`
       font-size: ${theme.font.sizes.large};
     `}

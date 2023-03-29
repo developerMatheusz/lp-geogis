@@ -1,5 +1,6 @@
 import Button from "../Button";
 import Logo from "../Logo";
+import MediaMatch from "../MediaMatch";
 import { FormWrapper } from "../Form";
 import { useState } from "react";
 import { NewMessage } from "@styled-icons/entypo/NewMessage";
@@ -10,7 +11,12 @@ const FormFeedback = () => {
 
   return (
     <FormWrapper>
-      <Logo size="large" />
+      <MediaMatch greaterThan="medium">
+        <Logo size="large" hideOnMobile />
+      </MediaMatch>
+      <MediaMatch lessThan="medium">
+        <Logo size="small" />
+      </MediaMatch>
       <form>
         <S.InputWrapper>
           <S.Icon>

@@ -15,5 +15,6 @@ export const Wrapper = styled.a`
         background: ${theme.colors.blue};
       }
     }
+    z-index: 3;
   `}
 `;
