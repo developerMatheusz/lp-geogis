@@ -70,7 +70,7 @@ const GovernanceModel = () => {
         </Heading>
       </MediaMatch>
       <ul>
-        <li>Compliance (Manual de conduta e Ética).</li>
+        <li>Compliance (Manual de Conduta e Ética).</li>
         <li>
           Reuniões periódicas semanais para alinhamentos de informações entre as
           equipes.

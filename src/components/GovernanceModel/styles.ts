@@ -24,6 +24,10 @@ export const Content = styled.div`
         list-style-type: none;
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
+        font-size: ${theme.font.sizes.xlarge};
+        ${media.lessThan("medium")`
+          font-size: ${theme.font.sizes.medium};
+        `}
       }
     }
     position: relative;
@@ -35,5 +39,9 @@ export const Description = styled.p`
   ${({ theme }) => css`
     color: ${theme.colors.black};
     margin-bottom: 2rem;
+    font-size: ${theme.font.sizes.xlarge};
+    ${media.lessThan("medium")`
+      font-size: ${theme.font.sizes.medium};
+    `}
   `}
 `;
