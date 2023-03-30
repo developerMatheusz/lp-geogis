@@ -20,12 +20,12 @@ export const Content = styled.div`
     margin-right: 5rem;
     text-align: left;
     > a {
-      color: ${theme.colors.gray};
+      color: ${theme.colors.secondary};
       margin-right: 0.6rem;
       font-size: ${theme.font.sizes.large};
       font-weight: ${theme.font.bold};
       &:hover {
-        color: ${theme.colors.darkGray};
+        color: ${theme.colors.blue};
       }
       transition: 0.3s;
     }
