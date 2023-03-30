@@ -7,10 +7,10 @@ export const Wrapper = styled.div`
     padding: ${theme.spacings.small};
     background: linear-gradient(
       135deg,
-      #3b8952 0%,
-      #3b8952 50%,
-      #0f684b 50%,
-      #0f684b 100%
+      #0a5483 0%,
+      #0a5483 50%,
+      #02416d 50%,
+      #02416d 100%
     );
   `}
 `;
@@ -61,6 +61,11 @@ export const Column = styled.div`
       border-radius: 100%;
       padding: 0.5rem;
     }
+    ${media.lessThan("medium")`
+      > svg {
+        width: 4.5rem;
+      }
+    `}
   `}
 `;
 

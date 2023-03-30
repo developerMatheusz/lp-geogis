@@ -7,8 +7,7 @@ export const InputWrapper = styled.div`
     background: ${theme.colors.lightGray};
     border-radius: 0.2rem;
     padding: 0 ${theme.spacings.xsmall};
-    border: 0.1rem solid;
-    border-color: ${theme.colors.secondary};
+    border: 0.1rem solid ${theme.colors.secondary};
     &:focus-within {
       box-shadow: 0 0 0.5rem ${theme.colors.secondary};
     }

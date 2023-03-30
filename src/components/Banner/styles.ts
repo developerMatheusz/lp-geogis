@@ -7,6 +7,7 @@ type ImageProps = {
 
 export const Wrapper = styled.main`
   position: relative;
+  z-index: 2;
 `;
 
 export const Image = styled.div<ImageProps>`

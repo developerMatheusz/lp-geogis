@@ -18,7 +18,7 @@ export const Wrapper = styled.div`
       width: 100%;
       height: 100%;
       z-index: 1;
-      opacity: 0.1;
+      opacity: 0.08;
       background-image: url(/img/geogis/bg_green_about_us.jpg);
       background-repeat: no-repeat;
       background-position: 50% 0;

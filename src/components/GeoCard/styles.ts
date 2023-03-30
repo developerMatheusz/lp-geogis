@@ -9,7 +9,8 @@ export const Wrapper = styled.article`
     height: 100%;
     background-color: ${theme.colors.darkBlue};
     cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.6) 0.5px 5px 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0,
+      rgba(60, 64, 67, 0.15) 0 2px 6px 2px;
   `}
 `;
 
@@ -44,7 +45,6 @@ export const ImageBox = styled.div`
 export const Content = styled.div`
   ${({ theme }) => css`
     padding: ${theme.spacings.xsmall};
-    border-radius: 5px;
     background-color: ${theme.colors.blue};
     display: flex;
     flex-direction: column;

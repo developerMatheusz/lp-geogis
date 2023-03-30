@@ -10,18 +10,18 @@ export const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     ${media.lessThan("medium")`
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    > div {
-      margin-top: 1rem;
-    }
-  `}
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      > div {
+        margin-top: 1rem;
+      }
+    `}
     background: linear-gradient(
       135deg,
-      #45484b 0%,
-      #45484b 50%,
-      #36393b 50%,
-      #36393b 100%
+      #0a5483 0%,
+      #0a5483 50%,
+      #02416d 50%,
+      #02416d 100%
     );
   `}
 `;

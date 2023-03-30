@@ -1,27 +1,28 @@
 import styled, { css } from "styled-components";
 import media from "styled-media-query";
 
-export const Content = styled.div`
+export const Background = styled.div`
   ${({ theme }) => css`
-    ${media.lessThan("medium")`
-      margin-top: 7rem;
-      margin-bottom: 4rem;
-      max-width: 33rem;
-    `}
-    max-width: ${theme.grid.containerContent};
     position: relative;
-    margin: 0 auto;
-    margin-top: 10rem;
-    margin-bottom: 4rem;
-    img {
+    background: ${theme.colors.white};
+    overflow: hidden;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
       width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0.08;
+      background-image: url(/img/geogis/bg_green_governance.jpg);
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-size: cover;
+      ${media.lessThan("medium")`
+        background: ${theme.colors.white};
+      `}
     }
-  `}
-`;
-
-export const Description = styled.p`
-  ${({ theme }) => css`
-    color: ${theme.colors.gray};
-    margin-bottom: 2rem;
   `}
 `;

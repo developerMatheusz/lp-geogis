@@ -22,6 +22,18 @@ export const Content = styled.div`
     > a {
       color: ${theme.colors.gray};
       margin-right: 0.6rem;
+      font-size: ${theme.font.sizes.large};
+      font-weight: ${theme.font.bold};
+      &:hover {
+        color: ${theme.colors.darkGray};
+      }
+      transition: 0.3s;
+    }
+    svg {
+      &:hover {
+        color: ${theme.colors.gray};
+      }
+      transition: 0.3s;
     }
 
     ${media.lessThan("medium")`
@@ -40,6 +52,7 @@ export const Content = styled.div`
 
 export const Description = styled.p`
   ${({ theme }) => css`
+    margin-top: 0.5rem;
     margin-bottom: 1rem;
     font-size: ${theme.font.sizes.xlarge};
     color: ${theme.colors.white};
