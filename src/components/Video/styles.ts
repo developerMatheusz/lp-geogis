@@ -31,7 +31,7 @@ export const Content = styled.div`
     }
     svg {
       &:hover {
-        color: ${theme.colors.gray};
+        color: ${theme.colors.secondary};
       }
       transition: 0.3s;
     }
