@@ -30,7 +30,7 @@ export default [
     href: "https://www.instagram.com/p/Cj77qEjpdW6/"
   },
   {
-    title: "Regularização fundiária",
+    title: "Títulos gerados",
     img: "/img/news/new6.png",
     description: "12.000 títulos gerados com a regularização fundiária.",
     href: "https://www.instagram.com/p/Cj0UxaYpk0j/"
