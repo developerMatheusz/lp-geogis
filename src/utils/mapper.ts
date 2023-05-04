@@ -12,7 +12,8 @@ export const newsInstagramMapper = (newsInstagram: any) => {
     img: `http://localhost:1337${instagram.attributes.img.data.attributes.url}`,
     description: instagram.attributes.description,
     href: instagram.attributes.href
-  }));};
+  }));
+};
 
 export const newsGeogisMapper = (newsGeogis: any) => {
   return newsGeogis.map((geogis: any) => ({
