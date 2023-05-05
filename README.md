@@ -4,7 +4,7 @@ O projeto do site da GeoGIS tem como objetivo mostrar ao público alvo dados pú
 
 ### 📋 Pré-requisitos
 
-NodeJS versão 10.13.0 ou superior:
+NodeJS versão 10.13.0 ou superior (em produção colocar versão 18.0.0 no package.json):
 
 ```
 https://nodejs.org/en
