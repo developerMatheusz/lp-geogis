@@ -5,7 +5,6 @@ import {
   NormalizedCacheObject
 } from "@apollo/client";
 import { useMemo } from "react";
-import { CONFIG } from "@/config";
 
 let apolloClient: ApolloClient<NormalizedCacheObject>;
 
