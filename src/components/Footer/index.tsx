@@ -45,8 +45,8 @@ const Footer = () => {
             <Link href="/governance" target="_self">
               Modelo de governança
             </Link>
-            <Link href="/portifolio" target="_self">
-              Portifólio
+            <Link href="/portfolio" target="_self">
+              Portfólio
             </Link>
             <Link href="https://ecoletasocial.com.br/" target="_blank">
               Ecoletasocial

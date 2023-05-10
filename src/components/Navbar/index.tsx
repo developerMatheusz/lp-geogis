@@ -21,7 +21,7 @@ const Navbar = () => {
         <S.MenuNav>
           <S.MenuLink href="/">INÍCIO</S.MenuLink>
           <S.MenuLink href="/governance">MODELO DE GOVERNANÇA</S.MenuLink>
-          <S.MenuLink href="/portifolio">PORTIFÓLIO</S.MenuLink>
+          <S.MenuLink href="/portfolio">PORTFÓLIO</S.MenuLink>
           <S.MenuLink href="https://ecoletasocial.com.br/" target="_blank">
             ECOLETASOCIAL
           </S.MenuLink>
@@ -31,7 +31,7 @@ const Navbar = () => {
         <S.MenuNav>
           <S.MenuLink href="/">INÍCIO</S.MenuLink>
           <S.MenuLink href="/governance">MODELO DE GOVERNANÇA</S.MenuLink>
-          <S.MenuLink href="/portifolio">PORTIFÓLIO</S.MenuLink>
+          <S.MenuLink href="/portfolio">PORTFÓLIO</S.MenuLink>
           <S.MenuLink href="https://ecoletasocial.com.br/" target="_blank">
             ECOLETASOCIAL
           </S.MenuLink>

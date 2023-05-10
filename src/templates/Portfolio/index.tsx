@@ -12,19 +12,19 @@ import Showcase from "@/components/ShowCase";
 import Base from "../Base";
 import * as S from "./styles";
 
-export type PortifolioProps = {
+export type PortfolioProps = {
   partners: GeoCardProps[];
   itemsNav: NavAboutUsProps;
   itemsBody: BodyAboutUsProps[];
   addInformation: ListInformationsProps[];
 };
 
-const Portifolio = ({
+const Portfolio = ({
   partners,
   itemsNav,
   itemsBody,
   addInformation
-}: PortifolioProps) => {
+}: PortfolioProps) => {
   return (
     <Base>
       <Banner
@@ -42,4 +42,4 @@ const Portifolio = ({
   );
 };
 
-export default Portifolio;
+export default Portfolio;
