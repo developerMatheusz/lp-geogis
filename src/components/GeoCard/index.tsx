@@ -1,20 +1,21 @@
 import * as S from "./styles";
+import Image from "next/legacy/image";
 
 export type GeoCardProps = {
   title: string;
   img: string;
   description: string;
-  href?: string;
+  href?: string | undefined;
 };
 
 const GeoCard = ({ title, img, description, href }: GeoCardProps) => {
   return (
     <S.Wrapper>
-      <S.ImageBox>
+      <S.ImageWrapper>
         <a href={href} target="_blank" rel="noreferrer">
-          <img src={img} alt={title} />
+          <Image src={img} alt={title} layout="fill" objectFit="cover" />
         </a>
-      </S.ImageBox>
+      </S.ImageWrapper>
       <S.Content>
         <S.Info>
           <S.Title>{title}</S.Title>

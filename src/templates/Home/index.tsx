@@ -15,6 +15,7 @@ import Base from "../Base";
 import { BannerProps } from "@/components/Banner";
 import { GeoCardProps } from "@/components/GeoCard";
 import * as S from "./styles";
+import { NextSeo } from "next-seo";
 
 export type HomeTemplateProps = {
   banners: BannerProps[];
@@ -35,6 +36,14 @@ const Home = ({
 }: HomeTemplateProps) => {
   return (
     <Base>
+      <NextSeo
+        title="Página inicial - GeoGIS"
+        description="Topografia; Aerofotogrametria; Geoprocessamento; Regularização Fundiária; Ambiental e Avaliação"
+        openGraph={{
+          title: "Página inicial - GeoGIS",
+          description: "Topografia; Aerofotogrametria; Geoprocessamento; Regularização Fundiária; Ambiental e Avaliação"
+        }}
+      />
       <SliderNews items={banners} />
       <AboutUs itemsNav={itemsNav} itemsBody={itemsBody} />
       <S.SectionVideo>

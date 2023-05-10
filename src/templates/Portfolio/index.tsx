@@ -11,6 +11,7 @@ import GeoLocalization from "@/components/GeoLocalization";
 import Showcase from "@/components/ShowCase";
 import Base from "../Base";
 import * as S from "./styles";
+import { NextSeo } from "next-seo";
 
 export type PortfolioProps = {
   partners: GeoCardProps[];
@@ -27,6 +28,14 @@ const Portfolio = ({
 }: PortfolioProps) => {
   return (
     <Base>
+      <NextSeo
+        title="Portfólio - GeoGIS"
+        description="Saiba mais sobre a empresa GeoGIS"
+        openGraph={{
+          title: "Portfólio - GeoGIS",
+          description: "Saiba mais sobre a empresa GeoGIS"
+        }}
+      />
       <Banner
         img="/img/geogis/bg_drone.jpg"
         title="Geoprocessamento na agricultura"

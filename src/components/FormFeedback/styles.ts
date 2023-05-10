@@ -4,6 +4,7 @@ import media from "styled-media-query";
 export const InputWrapper = styled.div`
   ${({ theme }) => css`
     display: flex;
+    border: 1px solid ${theme.colors.secondary};
     background: ${theme.colors.white};
     border-radius: 0.2rem;
     padding: 0 ${theme.spacings.xsmall};

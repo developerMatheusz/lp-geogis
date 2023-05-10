@@ -1,23 +1,17 @@
 import styled, { css } from "styled-components";
 import media from "styled-media-query";
 
-type ImageProps = {
-  src: string;
-};
-
 export const Wrapper = styled.main`
   position: relative;
   z-index: 2;
 `;
 
-export const Image = styled.div<ImageProps>`
-  ${({ theme, src }) => css`
+export const ImageWrapper = styled.div`
+  ${({ theme }) => css`
     width: 100%;
     height: 23rem;
-    background-image: url(${src});
+    position: relative;
     background-color: ${theme.colors.lightGray};
-    background-position: center center;
-    background-size: cover;
     ${media.greaterThan("medium")`
       height: 70rem;
     `}

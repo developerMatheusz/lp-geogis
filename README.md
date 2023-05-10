@@ -27,6 +27,8 @@ npm run dev
 ## 🛠️ Construído com
 
 * [NextJS](https://nextjs.org) - O framework react para a Web
+* [NextSEO](https://github.com/garmeeh/next-seo) - Módulo de SEO do NextJS
+* [NextProgressBar](https://github.com/apal21/nextjs-progressbar) - Módulo de ProgressBar do NextJS
 * [ReactSlick](https://react-slick.neostack.com) - Biblioteca React para criar slides carrossel
 * [VLibrasNextJS](https://socket.dev/npm/package/vlibras-nextjs) - Componente React para implementar o plugin de VLibras
 * [StyledComponents](https://styled-components.com) - Biblioteca de estilos CSS-In-JS
