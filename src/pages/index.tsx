@@ -20,7 +20,8 @@ export async function getStaticProps() {
   const {
     data: { banners, newsInstagram, newsGeogis }
   } = await apolloClient.query({
-    query: QUERY_HOME
+    query: QUERY_HOME,
+    fetchPolicy: "no-cache"
   });
 
   const banners_ = banners.data;

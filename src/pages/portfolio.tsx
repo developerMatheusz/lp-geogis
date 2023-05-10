@@ -16,7 +16,8 @@ export async function getStaticProps() {
   const {
     data: { newsGeogis }
   } = await apolloClient.query({
-    query: QUERY_HOME
+    query: QUERY_HOME,
+    fetchPolicy: "no-cache"
   });
 
   const geogis = newsGeogis.data;
