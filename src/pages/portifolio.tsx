@@ -23,6 +23,7 @@ export async function getStaticProps() {
 
   return {
     props: {
+      revalidate: 60,
       partners: newsGeogisMapper(geogis),
       itemsNav: itemsNavMock,
       itemsBody: itemsBodyMock,

@@ -29,6 +29,7 @@ export async function getStaticProps() {
 
   return {
     props: {
+      revalidate: 60,
       banners: bannerMapper(banners_),
       news: newsInstagramMapper(instagram),
       partners: newsGeogisMapper(geogis),
