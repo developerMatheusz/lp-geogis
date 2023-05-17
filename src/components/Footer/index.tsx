@@ -13,9 +13,7 @@ const Footer = () => {
             CONTATO
           </Heading>
           <a href="mailto:contato@geogis.com.br">contato@geogis.com.br</a>
-          <a href="https://wa.me/556540631726" target="_blank" rel="noreferrer">
-            +55 (65) 4063 - 1726
-          </a>
+          <p>0800 080 0203</p>
         </S.Column>
         <S.Column>
           <Heading color="black" size="small" lineBottom lineColor="secondary">
