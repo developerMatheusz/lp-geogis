@@ -25,7 +25,7 @@ const FormFeedback = () => {
         </S.InputWrapper>
         <Button
           as="a"
-          href={`mailto:matheusdeveloper001@gmail.com?subject=GeoGIS Feedback&body=${content}`}
+          href={`mailto:contato@geogis.com.br?subject=GeoGIS Feedback&body=${content}`}
           size="large"
           fullWidth
         >
