@@ -18,7 +18,7 @@ const Video = () => {
         <MediaMatch lessThan="medium">
           <Heading color="white">QUER SABER MAIS SOBRE A GEOGIS?</Heading>
         </MediaMatch>
-        <Link href="/governance">CONHEÇA NOSSO MODELO DE GOVERNANÇA</Link>
+        <Link href="/code">CONHEÇA NOSSO CÓDIGO DE CONDUTA E ÉTICA</Link>
         <S.Description>Siga-nos em nossas redes sociais</S.Description>
         <a
           href="https://www.instagram.com/geogisgeotec/"

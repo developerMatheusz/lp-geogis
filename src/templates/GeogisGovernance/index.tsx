@@ -12,7 +12,8 @@ const GeogisGovernance = () => {
         description="Os modelos de governança corporativa podem ser resumidos como diferentes conjuntos de processos que possuem como principal objetivo implementar a cultura do negócio na rotina dos colaboradores para melhorar a qualidade da gestão empresarial."
         openGraph={{
           title: "Modelo de Governança - GeoGIS",
-          description: "Os modelos de governança corporativa podem ser resumidos como diferentes conjuntos de processos que possuem como principal objetivo implementar a cultura do negócio na rotina dos colaboradores para melhorar a qualidade da gestão empresarial."
+          description:
+            "Os modelos de governança corporativa podem ser resumidos como diferentes conjuntos de processos que possuem como principal objetivo implementar a cultura do negócio na rotina dos colaboradores para melhorar a qualidade da gestão empresarial."
         }}
       />
       <S.Background>

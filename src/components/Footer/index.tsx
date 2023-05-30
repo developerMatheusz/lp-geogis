@@ -43,6 +43,9 @@ const Footer = () => {
             <Link href="/governance" target="_self">
               Modelo de governança
             </Link>
+            <Link href="/code" target="_self">
+              Código de Conduta e Ética
+            </Link>
             <Link href="/portfolio" target="_self">
               Portfólio
             </Link>

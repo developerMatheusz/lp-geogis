@@ -21,7 +21,10 @@ const GovernanceModel = () => {
         esfera de avaliação de resultados. Sendo assim, a GeoGIS é organizada da
         seguinte forma:
       </S.Description>
-      <img src="/img/model/model1.png" alt="Imagem ilustrativa sobre modelo de governança" />
+      <img
+        src="/img/model/model1.png"
+        alt="Imagem ilustrativa sobre modelo de governança"
+      />
       <MediaMatch greaterThan="medium">
         <Heading lineBottom lineColor="secondary" color="secondary">
           MODELOS DE GESTÃO
@@ -105,7 +108,10 @@ const GovernanceModel = () => {
         </li>
         <li>Responsabilidade social.</li>
       </ul>
-      <img src="/img/model/model2.png" alt="Imagem ilustrativa sobre modelos de gestão" />
+      <img
+        src="/img/model/model2.png"
+        alt="Imagem ilustrativa sobre modelos de gestão"
+      />
     </S.Content>
   );
 };

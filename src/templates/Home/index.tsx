@@ -41,7 +41,8 @@ const Home = ({
         description="Topografia; Aerofotogrametria; Geoprocessamento; Regularização Fundiária; Ambiental e Avaliação"
         openGraph={{
           title: "Página inicial - GeoGIS",
-          description: "Topografia; Aerofotogrametria; Geoprocessamento; Regularização Fundiária; Ambiental e Avaliação"
+          description:
+            "Topografia; Aerofotogrametria; Geoprocessamento; Regularização Fundiária; Ambiental e Avaliação"
         }}
       />
       <SliderNews items={banners} />
